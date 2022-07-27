@@ -77,6 +77,15 @@ jQuery(document).ready(function ($) {
     ],
   });
 
+  $(".video-slider").slick({
+    dots: true,
+    infinite: false,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  });
+
   $("#play").on("click", function (e) {
     e.preventDefault();
     $("#player")[0].src += "?autoplay=1";

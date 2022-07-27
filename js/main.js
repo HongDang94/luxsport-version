@@ -85,12 +85,4 @@ jQuery(document).ready(function ($) {
     slidesToShow: 3,
     slidesToScroll: 1,
   });
-
-  $("#play").on("click", function (e) {
-    e.preventDefault();
-    $("#player")[0].src += "?autoplay=1";
-    $("#player").show();
-    $("#video-cover").hide();
-    $("#play").hide();
-  });
 });

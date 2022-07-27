@@ -105,34 +105,36 @@ footer h4 {
   margin-right: 10px;
 }
 
-.wrapper {
+.y-video {
   position: relative;
-  width: 560px;
+  display: inline-block;
+  min-width: 434px;
+  min-height: 262px;
 }
 
-.wrapper img {
-  max-width: 100%;
-  height: auto;
-}
-
-.wrapper iframe {
-  display: none;
-}
-
-.play-btn {
+.y-video img {
   position: absolute;
-  z-index: 666;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: 0;
+  width: 434px;
+  height: 244px;
+  left: 0;
+  top: 0;
 }
 
-.play-btn:hover {
+.play-icon {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 42%;
+  z-index: 1;
+  width: 40px;
+  font-size: 26px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  padding: 4px 0 4px 5px;
   cursor: pointer;
-}
-
-.play-btn:focus {
-  outline: 0;
+  background: rgba(0, 0, 0, 0.7);
 }/*# sourceMappingURL=main.css.map */

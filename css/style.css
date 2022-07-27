@@ -228,4 +228,50 @@ a:hover {
   background: url(../img/icon-prev-disabled.png) no-repeat center;
   width: 64px;
   height: 64px;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.prev-btn-style2 {
+  left: auto;
+  right: 64px;
+  top: 44px;
+}
+
+.next-btn-style2 {
+  left: auto;
+  right: 16px;
+  top: 44px;
+}
+
+.prev-btn-style2, .next-btn-style2 {
+  width: 32px;
+  height: 32px;
+  box-shadow: none;
+}
+
+.next-btn-style2:after, .prev-btn-style2:after {
+  width: 32px;
+  height: 32px;
+}
+
+.prev-btn {
+  left: -53px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.next-btn,
+.swiper-button-next.btn-blog {
+  right: -53px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-button-prev.btn-blog {
+  left: -34px;
+}
+
+.swiper-button-next.btn-blog {
+  right: -34px;
 }/*# sourceMappingURL=style.css.map */

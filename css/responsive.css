@@ -3,6 +3,17 @@
     max-width: 1140px;
   }
 }
+@media (max-width: 1365px) {
+  header .logo {
+    margin-right: 1.568vw;
+  }
+  header ul li {
+    margin-right: 1vw;
+  }
+  .btn-icon {
+    margin-left: 8px;
+  }
+}
 @media (max-width: 1024px) {
   .newsletter-wrap img {
     display: none;

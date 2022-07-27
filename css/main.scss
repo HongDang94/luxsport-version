@@ -42,15 +42,6 @@ header {
   }
 }
 
-.intro-slider {
-  .slick-slide > div {
-    margin: 0 12px;
-  }
-  .slick-list {
-    margin: 0 -12px;
-  }
-}
-
 .intro-product {
   background: #ffffff;
   border-radius: 8px;
@@ -156,4 +147,20 @@ img.thumb {
   border-color: rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.6);
   color: rgba(255, 255, 255, 0.8);
+}
+
+.section-method-contact {
+  margin-top: 158px;
+}
+
+.blog-post {
+  .blog-content {
+    width: 286px;
+  }
+}
+
+.advertisSlider  {
+  .swiper-slide {
+    width: 356px;;
+  }
 }

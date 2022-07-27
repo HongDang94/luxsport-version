@@ -1,88 +1,34 @@
 jQuery(document).ready(function ($) {
   "use strict";
-
-  $(".banner-slider").slick({
-    dots: false,
-    infinite: false,
-    autoplay: true,
-    speed: 300,
-    fade: true,
+  var swiperBanner = new Swiper(".bannerSlider", {
+    spaceBetween: 30,
+    effect: "fade",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
-  $(".intro-slider").slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          centerMode: false,
-          variableWidth: true,
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  var swiperAdvertisSlider = new Swiper(".advertisSlider", {
+    slidesPerView: "auto",
+    spaceBetween: 24,
   });
 
-  $(".product-slider").slick({
-    infinite: false,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  var swiperBlogSlider = new Swiper(".blogSlider", {
+    slidesPerView: "auto",
+    spaceBetween: 18,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
-  $(".video-slider").slick({
-    dots: true,
-    infinite: false,
-    autoplay: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+  var swiperProductSlider = new Swiper(".productSlider", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 });

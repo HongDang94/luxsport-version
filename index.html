@@ -9,8 +9,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -51,39 +53,43 @@
         </div>
       </div>
     </header>
-
     <section>
-      <ul class="banner-slider">
-        <li>
-          <img src="./img/banner-1.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/banner-2.jpg" alt="" />
-        </li>
-        <li>
-          <img src="./img/banner-3.jpg" alt="" />
-        </li>
-      </ul>
+      <div class="swiper bannerSlider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/banner-1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/banner-2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/banner-3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/banner-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </section>
 
     <section class="mt24">
-      <ul class="container intro-slider">
-        <li>
-          <div>
-            <img src="./img/testi-1.jpg" alt="" />
+      <div class="container">
+        <div class="swiper advertisSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/testi-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/testi-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/testi-3.jpg" alt="" />
+            </div>
           </div>
-        </li>
-        <li>
-          <div>
-            <img src="./img/testi-2.jpg" alt="" />
-          </div>
-        </li>
-        <li>
-          <div>
-            <img src="./img/testi-3.jpg" alt="" />
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <section class="mt32">
@@ -115,200 +121,131 @@
           </ul>
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="product-best-seller">
-              <ul class="container product-slider">
-                <li class="product-item">
-                  <div>
-                    <div class="img">
-                      <a href="#">
-                        <img
-                          src="./img/product/product-1.png"
-                          alt="Ghế massage Luxsport Boss chair luxury 2"
-                        />
-                      </a>
-                    </div>
-                    <p class="p1">
-                      <a href="#">Ghế massage Luxsport Boss chair luxury 2</a>
-                    </p>
-
-                    <h3 class="price">32.990.000 đ</h3>
-                    <del><span>32.990.000 đ</span></del>
+              <div class="container swiper productSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li class="product-item">
-                  <div>
-                    <div class="img">
-                      <a href="#">
-                        <img
-                          src="./img/product/product-2.png"
-                          alt="Ghế massage Luxsport Boss chair luxury 2"
-                        />
-                      </a>
-                    </div>
-                    <p class="p1">
-                      <a href="#">Ghế massage Luxsport Boss chair luxury 2</a>
-                    </p>
-
-                    <h3 class="price">32.990.000 đ</h3>
-                    <del><span>32.990.000 đ</span></del>
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li class="product-item">
-                  <div>
-                    <div class="img">
-                      <a href="#">
-                        <img
-                          src="./img/product/product-3.png"
-                          alt="Ghế massage Luxsport Boss chair luxury 2"
-                        />
-                      </a>
-                    </div>
-                    <p class="p1">
-                      <a href="#">Ghế massage Luxsport Boss chair luxury 2</a>
-                    </p>
-
-                    <h3 class="price">32.990.000 đ</h3>
-                    <del><span>32.990.000 đ</span></del>
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li class="product-item">
-                  <div>
-                    <div class="img">
-                      <a href="#">
-                        <img
-                          src="./img/product/product-4.png"
-                          alt="Ghế massage Luxsport Boss chair luxury 2"
-                        />
-                      </a>
-                    </div>
-                    <p class="p1">
-                      <a href="#">Ghế massage Luxsport Boss chair luxury 2</a>
-                    </p>
-
-                    <h3 class="price">32.990.000 đ</h3>
-                    <del><span>32.990.000 đ</span></del>
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li class="product-item">
-                  <div>
-                    <div class="img">
-                      <a href="#">
-                        <img
-                          src="./img/product/product-5.png"
-                          alt="Ghế massage Luxsport Boss chair luxury 2"
-                        />
-                      </a>
-                    </div>
-                    <p class="p1">
-                      <a href="#">Ghế massage Luxsport Boss chair luxury 2</a>
-                    </p>
-
-                    <h3 class="price">32.990.000 đ</h3>
-                    <del><span>32.990.000 đ</span></del>
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-              </ul>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
             <div class="tab-pane fade" id="product-new">
-              <ul class="container product-slider">
-                <li class="product-item">
-                  <div>
-                    <div class="img">
-                      <a href="#">
-                        <img
-                          src="./img/product/product-1.png"
-                          alt="Ghế massage Luxsport Boss chair luxury 2"
-                        />
-                      </a>
-                    </div>
-                    <p class="p1">
-                      <a href="#">Ghế massage Luxsport Boss chair luxury 2</a>
-                    </p>
-
-                    <h3 class="price">32.990.000 đ</h3>
-                    <del><span>32.990.000 đ</span></del>
+              <div class="container swiper productSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./img/testi-1.jpg" alt="" />
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./img/testi-1.jpg" alt="" />
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./img/testi-1.jpg" alt="" />
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./img/testi-1.jpg" alt="" />
+                  <div class="swiper-slide">
+                    <a href="#">
+        <img
+            src="./img/product/product-1.png"
+            alt="Ghế massage Luxsport Boss chair luxury 2"
+        />
+    </a>
+    <a href="#" class="p1">Ghế massage Luxsport Boss chair luxury 2</a>
+    <h3 class="price">32.990.000 đ</h3>
+    <del><span>32.990.000 đ</span></del>
                   </div>
-                </li>
-                <li>
-                  <div>
-                    <img src="./img/testi-1.jpg" alt="" />
-                  </div>
-                </li>
-              </ul>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="padding-top-60 padding-bottom-60">
-      <div class="container">
-        <!-- heading -->
-        <div class="heading">
-          <h2>From our Blog</h2>
-          <hr />
-        </div>
-        <div id="blog-slide">
-          <!-- Blog Post -->
-          <div class="blog-post">
-            <article>
-              <img class="img-responsive" src="./img/blog/blog-1.png" alt="" />
-              <a href="#." class="tittle"
-                >It’s why there’s nothing else like Mac.
-              </a>
-              <p>
-                Etiam porttitor ante non tellus pulvinar, non vehicula lorem
-                fermentum. Nulla vitae efficitur mi [...]
-              </p>
-              <a href="#.">Readmore</a>
-            </article>
-          </div>
-
-          <div class="blog-post">
-            <article>
-              <img class="img-responsive" src="./img/blog/blog-2.png" alt="" />
-              <a href="#." class="tittle"
-                >It’s why there’s nothing else like Mac.
-              </a>
-              <p>
-                Etiam porttitor ante non tellus pulvinar, non vehicula lorem
-                fermentum. Nulla vitae efficitur mi [...]
-              </p>
-              <a href="#.">Readmore</a>
-            </article>
-          </div>
-
-          <div class="blog-post">
-            <article>
-              <img class="img-responsive" src="./img/blog/blog-3.png" alt="" />
-              <a href="#." class="tittle"
-                >It’s why there’s nothing else like Mac.
-              </a>
-              <p>
-                Etiam porttitor ante non tellus pulvinar, non vehicula lorem
-                fermentum. Nulla vitae efficitur mi [...]
-              </p>
-              <a href="#.">Readmore</a>
-            </article>
           </div>
         </div>
       </div>
@@ -319,6 +256,68 @@
         <a href="https://luxsport.com.vn/bosschair">
           <img src="./img/banner-intro.jpg" width="100%" alt="" />
         </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="swiper blogSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article>
+                <img class="img-responsive" src="./img/blog/blog-1.png" alt="" />
+                <div class="blog-content">
+                  <a href="#." class="tittle">Ghế massage Boss Chair - sức khỏe trọn vẹn cho mọi gia đình
+                  </a>
+                  <p class="p2">
+                    Ghế massage Boss Chair của Lux Sport được sản xuất dựa trên công nghệ tiên tiến nhất của 
+                  </p>
+                </div>
+                <img src="./img/dantri.png" alt="" class="img-brand">
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <img class="img-responsive" src="./img/blog/blog-1.png" alt="" />
+                <div class="blog-content">
+                  <a href="#." class="tittle">Ghế massage Boss Chair - sức khỏe trọn vẹn cho mọi gia đình
+                  </a>
+                  <p class="p2">
+                    Ghế massage Boss Chair của Lux Sport được sản xuất dựa trên công nghệ tiên tiến nhất của 
+                  </p>
+                </div>
+                <img src="./img/dantri.png" alt="" class="img-brand">
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <img class="img-responsive" src="./img/blog/blog-1.png" alt="" />
+                <div class="blog-content">
+                  <a href="#." class="tittle">Ghế massage Boss Chair - sức khỏe trọn vẹn cho mọi gia đình
+                  </a>
+                  <p class="p2">
+                    Ghế massage Boss Chair của Lux Sport được sản xuất dựa trên công nghệ tiên tiến nhất của 
+                  </p>
+                </div>
+                <img src="./img/dantri.png" alt="" class="img-brand">
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <img class="img-responsive" src="./img/blog/blog-1.png" alt="" />
+                <div class="blog-content">
+                  <a href="#." class="tittle">Ghế massage Boss Chair - sức khỏe trọn vẹn cho mọi gia đình
+                  </a>
+                  <p class="p2">
+                    Ghế massage Boss Chair của Lux Sport được sản xuất dựa trên công nghệ tiên tiến nhất của 
+                  </p>
+                </div>
+                <img src="./img/dantri.png" alt="" class="img-brand">
+              </article>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
@@ -520,7 +519,7 @@
 
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>
     <script src="./js/vendors/jquery.min.js"></script>
-    <script src="./js/vendors/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/test.js"></script>
   </body>

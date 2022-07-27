@@ -36,13 +36,6 @@ header .btn-group-wrap {
   margin-left: 21px;
 }
 
-.intro-slider .slick-slide > div {
-  margin: 0 12px;
-}
-.intro-slider .slick-list {
-  margin: 0 -12px;
-}
-
 .intro-product {
   background: #ffffff;
   border-radius: 8px;
@@ -107,17 +100,9 @@ footer h4 {
 
 .y-video {
   position: relative;
-  display: inline-block;
-  min-width: 434px;
-  min-height: 262px;
-}
-
-.y-video img {
-  position: absolute;
-  width: 434px;
-  height: 244px;
-  left: 0;
-  top: 0;
+  display: block;
+  width: 500px;
+  clear: left;
 }
 
 .play-icon {
@@ -130,11 +115,39 @@ footer h4 {
   z-index: 1;
   width: 40px;
   font-size: 26px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   padding: 4px 0 4px 5px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+
+img.thumb {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-height: 281px;
+  left: 0;
+  top: 0;
+}
+
+.y-video:hover .play-icon {
+  border-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-method-contact {
+  margin-top: 158px;
+}
+
+.blog-post .blog-content {
+  width: 286px;
+}
+
+.advertisSlider .swiper-slide {
+  width: 356px;
 }/*# sourceMappingURL=main.css.map */

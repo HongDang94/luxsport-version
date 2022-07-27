@@ -1,0 +1,138 @@
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div,
+header ul {
+  display: flex;
+  align-items: center;
+}
+header ul li {
+  margin-right: 33px;
+}
+header ul li:last-child {
+  margin-right: 0;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+header h1 a {
+  color: #ed1c24;
+}
+header .logo {
+  margin-right: 76px;
+}
+header .logo img {
+  width: 100%;
+}
+header .btn-group-wrap {
+  margin-left: 21px;
+}
+
+.intro-slider .slick-slide > div {
+  margin: 0 12px;
+}
+.intro-slider .slick-list {
+  margin: 0 -12px;
+}
+
+.intro-product {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.section-method-contact {
+  background: #ffffff;
+}
+
+.method-contact {
+  display: flex;
+  align-items: center;
+}
+.method-contact img {
+  padding-right: 16px;
+}
+.method-contact h5 {
+  color: #101828;
+}
+.method-contact p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #a0a0a0;
+}
+
+.section-newsletter {
+  background: #282f3d;
+}
+
+.newsletter-wrap {
+  display: flex;
+  align-items: center;
+}
+.newsletter-wrap .box-content {
+  display: flex;
+  align-items: center;
+}
+
+.section-banner img {
+  border-radius: 8px;
+}
+
+footer {
+  background: #101828;
+  color: #ffffff;
+}
+footer h4 {
+  color: #ffffff;
+}
+
+.address-info li,
+.links-footer li {
+  display: flex;
+  align-items: flex-start;
+}
+.address-info li img,
+.links-footer li img {
+  margin-right: 10px;
+}
+
+.wrapper {
+  position: relative;
+  width: 560px;
+}
+
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper iframe {
+  display: none;
+}
+
+.play-btn {
+  position: absolute;
+  z-index: 666;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 0;
+}
+
+.play-btn:hover {
+  cursor: pointer;
+}
+
+.play-btn:focus {
+  outline: 0;
+}/*# sourceMappingURL=main.css.map */

@@ -121,16 +121,12 @@ a:hover {
   justify-content: center;
   width: 38px;
   height: 38px;
-  background: #f3f4f4;
   border-radius: 50%;
   margin-left: 12px;
 }
 .btn-icon:hover, .btn-icon:focus {
-  background: #f3f4f4;
+  background: #fef8f8;
   border: 0 !important;
-}
-.btn-icon:first-child {
-  margin-left: 0;
 }
 
 .p24 {
@@ -147,6 +143,14 @@ a:hover {
 
 .mt32 {
   margin-top: 32px;
+}
+
+.blue {
+  color: #3982f7;
+}
+
+.red {
+  color: #ed1c24;
 }
 
 .input-group {
@@ -265,12 +269,14 @@ a:hover {
   height: 32px;
 }
 
-.prev-btn {
+.prev-btn,
+.prev-btn-news {
   left: -53px;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .next-btn,
+.next-btn-news,
 .swiper-button-next.btn-blog {
   right: -53px;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
@@ -312,9 +318,10 @@ a:hover {
 
 .btn_close {
   position: absolute;
-  top: 35px;
-  right: 12px;
-  padding: 8px;
+  top: 24px;
+  right: 16px;
+  background: transparent;
+  border: 0;
 }
 
 .gnb {
@@ -328,14 +335,72 @@ a:hover {
   text-align: left;
   background: #121212;
   z-index: 300;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-overflow-scrolling: touch;
+  background: #ffffff;
+  color: #878b94;
+}
+.gnb .dropdown-menu-contact {
+  padding: 16px;
+}
+
+.list-page-mo {
+  padding: 18px 8px;
+}
+.list-page-mo li a {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  background: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #878b94;
+}
+.list-page-mo li a:hover {
+  background: #fef8f8;
+  color: #ed1c24;
+}
+
+.gnb_wrap .dropdown-menu-contact {
+  position: absolute;
+  bottom: 0;
+}
+
+.show_menu {
+  overflow-y: scroll;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.show_menu .gnb:before {
+  left: 351px;
+  display: block;
+}
+
+.gnb:before {
+  content: "";
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.gnb_head {
+  padding: 20px 8px;
+  border-bottom: 1px solid #e7e8e9;
 }
 
 .vka {
-  width: 60px;
+  width: 64px;
   max-width: unset;
-  height: 60px;
+  height: 64px;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -344,8 +409,8 @@ a:hover {
   background: #c31d1d;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: absolute;
-  right: 35px;
-  bottom: 10px;
+  right: 24px;
+  bottom: 53px;
   z-index: 1000;
   overflow: hidden;
   transform: rotate(0deg);
@@ -354,15 +419,103 @@ a:hover {
 
 .vka-wrapper {
   position: fixed;
-  bottom: 32px;
+  bottom: 53px;
   z-index: 9999999;
-  right: 0px;
+  right: 24px;
+}
+
+.vka-checkbox {
+  display: none !important;
+}
+
+.vka-checkbox:not(:checked) ~ .vka {
+  animation-name: zoom;
+  -webkit-animation-name: zoom;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #c31d1d;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.vka-wheel {
+  position: absolute;
+  bottom: 84px;
+  right: 24px;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: all 0.3s ease;
+  z-index: 12;
+}
+
+.vka-wheel .vka-action {
+  position: absolute;
+}
+
+.vka-wheel .vka-action-3 {
+  right: 0;
+  bottom: 202px;
+  cursor: pointer;
+}
+
+.vka-wheel .vka-action-4 {
+  right: 0;
+  bottom: 125px;
+}
+
+.vka-checkbox:checked ~ .vka-wheel {
+  transform: scale(1);
+}
+
+.vka-button {
+  width: 64px;
+  height: 64px;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.vka-wheel .vka-action-2 {
+  bottom: 46px;
+  right: 0;
 }
 
 .icon-cps-vka-menu {
-  width: 46px;
-  height: 46px;
-  margin: 0 !important;
+  width: 64px;
+  height: 64px;
+  background: url(../img/contact.png);
+}
+
+.vka-checkbox:checked ~ .vka .icon-cps-vka-menu {
+  width: 64px;
+  width: 64px;
+  background: #fff url(../img/icon-close-mo.svg) center no-repeat;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-menu {
@@ -373,4 +526,99 @@ a:hover {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 18px 28px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   box-sizing: border-box;
+  border: 0;
+  top: 8px !important;
+}
+.dropdown-menu a:hover p {
+  color: #101828;
+}
+
+.dropdown-menu-contact {
+  padding: 8px;
+  width: 237px;
+}
+.dropdown-menu-contact strong {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+.dropdown-menu-contact p {
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #101828;
+}
+.dropdown-menu-contact li {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 6px;
+  padding: 8px;
+}
+.dropdown-menu-contact li a {
+  width: 100%;
+}
+.dropdown-menu-contact li strong,
+.dropdown-menu-contact li p {
+  margin-left: 14px;
+}
+.dropdown-menu-contact li:hover {
+  background-color: #fef8f8;
+}
+.dropdown-menu-contact .item-call:before {
+  content: "";
+  margin-top: 8px;
+  display: inline-block;
+  background: url(../img/icon-call-hover.svg) no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+}
+.dropdown-menu-contact .item-zalo:before {
+  content: "";
+  margin-top: 8px;
+  display: inline-block;
+  background: url(../img/icon-zalo.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.dropdown-menu-search h4,
+.dropdown-menu-search .h4 {
+  color: #101828;
+}
+.dropdown-menu-search .form-control {
+  height: 44px;
+}
+
+.swiper-slide {
+  border-radius: 8px;
+}
+
+.swiper-slide a {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #e7e8e9;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ed1c24;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -4px;
+}
+
+.swiper-pagination {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

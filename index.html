@@ -25,7 +25,7 @@
         <a href="https://luxsport.com.vn/" target="_blank" class="logo"
           ><img src="./img/logo.png" alt="Lux Sport"
         /></a>
-        <ul>
+        <ul class="list-page">
           <li>
             <a href="#." target="_blank" class="h5">Ghế massage</a>
           </li>
@@ -41,7 +41,7 @@
       <h1><a href="#." target="_blank">Lux sport</a></h1>
 
       <div>
-        <ul>
+        <ul class="list-page">
           <li>
             <a href="#." target="_blank" class="h5">Hoạt động xã hội</a>
           </li>
@@ -56,20 +56,17 @@
           </li>
         </ul>
         <div class="btn-group-wrap">
-          <div class="dropdown">
+          <div class="btn-wrap">
             <button
               type="button"
-              class="btn btn-icon"
+              class="btn btn-icon btn-search"
               data-bs-toggle="dropdown"
               aria-expanded="false"
               data-bs-auto-close="outside"
-            >
-              <img src="./img/icon-search.svg" alt="" />
-            </button>
-            <form class="dropdown-menu">
-              <label for="search-dropdown" class="form-label">Search</label>
+            ></button>
+            <!-- <form class="dropdown-menu dropdown-menu-search">
+              <h4 for="search-dropdown" class="form-label">Search</h4>
               <input
-                type="email"
                 class="form-control"
                 id="search-dropdown"
                 placeholder="Typing..."
@@ -88,26 +85,32 @@
                   </div>
                 </li>
               </ul>
-            </form>
+            </form> -->
           </div>
-          <div class="btn-group">
+          <div class="btn-wrap">
             <button
               type="button"
-              class="btn-icon btn dropdown-toggle"
+              class="btn btn-icon btn-call"
               data-bs-toggle="dropdown"
               aria-expanded="false"
               data-bs-auto-close="outside"
-            >
-              <img src="./img/icon-call.svg" alt="" />
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+            ></button>
+            <ul class="dropdown-menu dropdown-menu-contact">
+              <li class="item item-call">
+                <a href="tel:19000065">
+                  <strong class="red">1900 0065</strong>
+                  <p>Hỗ trợ 24/7</p>
+                </a>
+              </li>
+              <li class="item item-zalo">
+                <a href="https://zalo.me/0772959888" target="_blank">
+                  <strong class="blue">0772959888</strong>
+                  <p>Zalo chat 24/7</p>
+                </a>
+              </li>
             </ul>
           </div>
-          <button type="button" class="btn btn-icon">
-            <img src="./img/icon-cart.svg" alt="" />
-          </button>
+          <button type="button" class="btn btn-icon btn-cart"></button>
         </div>
       </div>
     </header>
@@ -132,11 +135,48 @@
 
     <div class="gnb menu_type">
       <div class="gnb_wrap">
-        <button type="button" class="btn_close">
-          <img src="./img/icon-close-mo.svg" alt="" />
-        </button>
-        <ul>
-          <li><a href="#."></a></li>
+        <div class="gnb_head">
+          <img src="./img/logo.png" alt="Lux Sport" />
+          <button type="button" class="btn_close">
+            <img src="./img/icon-close-mo.svg" alt="" />
+          </button>
+        </div>
+        <ul class="list-page-mo">
+          <li>
+            <a href="#." target="_blank">Ghế massage</a>
+          </li>
+          <li>
+            <a href="#." target="_blank">Thiết bị thể thao</a>
+          </li>
+          <li>
+            <a href="#." target="_blank">Home gym</a>
+          </li>
+          <li>
+            <a href="#." target="_blank">Hoạt động xã hội</a>
+          </li>
+          <li>
+            <a href="#." target="_blank">Bảo hành</a>
+          </li>
+          <li>
+            <a href="#." target="_blank">Tin tức</a>
+          </li>
+          <li>
+            <a href="#." target="_blank">Liên hệ</a>
+          </li>
+        </ul>
+        <ul class="dropdown-menu-contact w-100">
+          <li class="item item-call">
+            <a href="tel:19000065">
+              <strong class="red">1900 0065</strong>
+              <p>Hỗ trợ 24/7</p>
+            </a>
+          </li>
+          <li class="item item-zalo">
+            <a href="https://zalo.me/0772959888" target="_blank">
+              <strong class="blue">0772959888</strong>
+              <p>Zalo chat 24/7</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -145,16 +185,20 @@
       <div class="swiper bannerSlider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./img/banner-1.jpg" alt="" />
+            <img src="./img/banner1-mo.png" alt="" class="img-mo576" />
+            <img src="./img/banner-1.jpg" alt="" class="img-pc576" />
           </div>
           <div class="swiper-slide">
-            <img src="./img/banner-2.jpg" alt="" />
+            <img src="./img/banner1-mo.png" alt="" class="img-mo576" />
+            <img src="./img/banner-2.jpg" alt="" class="img-pc576" />
           </div>
           <div class="swiper-slide">
-            <img src="./img/banner-3.jpg" alt="" />
+            <img src="./img/banner1-mo.png" alt="" class="img-mo576" />
+            <img src="./img/banner-3.jpg" alt="" class="img-pc576" />
           </div>
           <div class="swiper-slide">
-            <img src="./img/banner-4.jpg" alt="" />
+            <img src="./img/banner1-mo.png" alt="" class="img-mo576" />
+            <img src="./img/banner-4.jpg" alt="" class="img-pc576" />
           </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -162,7 +206,7 @@
       </div>
     </section>
 
-    <section class="mt24">
+    <section class="section-advertis mt24">
       <div class="container">
         <div class="swiper advertisSlider">
           <div class="swiper-wrapper">
@@ -211,8 +255,29 @@
             <div class="tab-pane fade show active" id="product-best-seller">
               <div class="swiper-button-next next-btn"></div>
               <div class="swiper-button-prev prev-btn"></div>
-              <div class="container swiper productSlider product-slider">
+              <div
+                id="sproduct-best-seller"
+                class="container swiper productSlider product-slider"
+              >
                 <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <label class="sale">30% off</label>
+                    <a href="#." target="_blank">
+                      <img
+                        src="./img/product/product-1.png"
+                        alt="Ghế massage Luxsport Boss chair luxury 2"
+                      />
+                    </a>
+                    <a
+                      href="#."
+                      target="_blank"
+                      target="_blank"
+                      class="product-title p1"
+                      >Ghế massage Luxsport Boss chair luxury 2</a
+                    >
+                    <h3 class="price-sale">32.990.000 đ</h3>
+                    <del><span class="price">32.990.000 đ</span></del>
+                  </div>
                   <div class="swiper-slide">
                     <label class="sale">30% off</label>
                     <a href="#." target="_blank">
@@ -305,7 +370,12 @@
               </div>
             </div>
             <div class="tab-pane fade" id="product-new">
-              <div class="container swiper productSlider product-slider">
+              <div class="swiper-button-next next-btn-news"></div>
+              <div class="swiper-button-prev prev-btn-news"></div>
+              <div
+                id="sproduct-new"
+                class="container swiper productSlider product-slider"
+              >
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <label class="sale">30% off</label>
@@ -379,8 +449,7 @@
                     <del><span class="price">32.990.000 đ</span></del>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
@@ -494,6 +563,7 @@
                 <del><span class="price">32.990.000 đ</span></del>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -605,6 +675,7 @@
                 <del><span class="price">32.990.000 đ</span></del>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -631,7 +702,7 @@
                   <a href="#." target="_blank">
                     <img
                       class="img-responsive"
-                      src="./img/blog/blog-1.png"
+                      src="./img/blog/blog-about-1.png"
                       alt=""
                     />
                   </a>
@@ -655,7 +726,7 @@
                   <a href="#." target="_blank">
                     <img
                       class="img-responsive"
-                      src="./img/blog/blog-1.png"
+                      src="./img/blog/blog-about-2.png"
                       alt=""
                     />
                   </a>
@@ -677,7 +748,7 @@
                   <a href="#." target="_blank">
                     <img
                       class="img-responsive"
-                      src="./img/blog/blog-1.png"
+                      src="./img/blog/blog-about-3.png"
                       alt=""
                     />
                   </a>
@@ -699,7 +770,7 @@
                   <a href="#." target="_blank">
                     <img
                       class="img-responsive"
-                      src="./img/blog/blog-1.png"
+                      src="./img/blog/blog-about-1.png"
                       alt=""
                     />
                   </a>
@@ -717,6 +788,7 @@
                 <img src="./img/dautu.png" alt="" class="img-brand" />
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -863,6 +935,7 @@
               </article>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -936,7 +1009,7 @@
       <div class="container">
         <div class="row list-footer">
           <!-- Contact -->
-          <div class="col-md-5 col-sm-12 col-12">
+          <div class="col-lg-5 col-md-6 col-sm-12 col-12">
             <h4>Cơ sở trải nghiệm</h4>
             <ul class="address-info">
               <li>
@@ -945,19 +1018,19 @@
               </li>
               <li>
                 <img src="./img/icon-building.png" alt="" />
-                <span>60 Nguyễn Thị Nhung, Hiệp Bình Phước, Thủ Đức, HCM</span>
+                <span>771 Kinh Dương Vương, Bình Tân, HCM</span>
               </li>
               <li>
                 <img src="./img/icon-building.png" alt="" />
-                <span>60 Nguyễn Thị Nhung, Hiệp Bình Phước, Thủ Đức, HCM</span>
+                <span>67-69 Thanh Tịnh, Hòa Minh, Liên Chiểu, Đà Nẵng</span>
               </li>
               <li>
                 <img src="./img/icon-building.png" alt="" />
-                <span>60 Nguyễn Thị Nhung, Hiệp Bình Phước, Thủ Đức, HCM</span>
+                <span>254 Nguyễn Văn Cừ, Hưng Phúc, Vinh, Nghệ An</span>
               </li>
               <li>
                 <img src="./img/icon-building.png" alt="" />
-                <span>60 Nguyễn Thị Nhung, Hiệp Bình Phước, Thủ Đức, HCM</span>
+                <span>375A Lê Đại Hành, P.11, Q.11, HCM</span>
               </li>
               <li>
                 <img src="./img/icon-building.png" alt="" />
@@ -967,7 +1040,7 @@
           </div>
 
           <!-- Categories -->
-          <div class="col-md-2 col-sm-6 col-6">
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6 about-us">
             <h4>Về chúng tôi</h4>
             <ul class="links-footer">
               <li><a href="#." target="_blank">Về Luxsport</a></li>
@@ -978,7 +1051,7 @@
           </div>
 
           <!-- Categories -->
-          <div class="col-md-3 col-sm-6 col-6">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6 about-us">
             <h4>Về chúng tôi</h4>
             <ul class="links-footer">
               <li><a href="#." target="_blank">Về Luxsport</a></li>
@@ -989,7 +1062,7 @@
           </div>
 
           <!-- Categories -->
-          <div class="col-md-2 col-sm-12 col-12">
+          <div class="col-lg-2 col-md-12 col-sm-12 col-12 more-us">
             <h4>Information</h4>
             <ul class="links-footer">
               <li>
@@ -1058,7 +1131,7 @@
       <div class="vka-wrapper">
         <input id="vkaCheckbox" type="checkbox" class="vka-checkbox" />
         <label class="vka" for="vkaCheckbox">
-          <img src="./img/icon-contact.svg" alt="" />
+          <span class="icon-cps-vka-menu"></span>
         </label>
         <div class="vka-wheel">
           <a
@@ -1069,7 +1142,7 @@
             title="Chat Zalo"
           >
             <div class="vka-button vka-button-4">
-              <i class="icon-cps-chat-zalo"></i>
+              <img src="./img/contact-zalo.png" alt="" />
             </div>
           </a>
           <a
@@ -1079,7 +1152,7 @@
             title="Gọi trực tiếp"
           >
             <div class="vka-button vka-button-2">
-              <i class="icon-cps-phone"></i>
+              <img src="./img/contact-call.png" alt="" />
             </div>
           </a>
           <a
@@ -1090,7 +1163,7 @@
             title="Chat Facebook"
           >
             <div class="vka-button vka-button-3">
-              <i class="icon-cps-facebook"></i>
+              <img src="./img/contact-mess.png" alt="" />
             </div>
           </a>
         </div>
@@ -1106,13 +1179,6 @@
           <a href="#." target="_blank"></a>
         </li>
       </ul>
-      <button
-        type="button"
-        class="btn_close js_btn_close"
-        style="opacity: 1; left: 0px"
-      >
-        <i class="ico_close"><span class="blind">Close</span></i>
-      </button>
     </div>
 
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>

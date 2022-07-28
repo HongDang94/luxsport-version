@@ -12,6 +12,14 @@ jQuery(document).ready(function ($) {
   var swiperAdvertisSlider = new Swiper(".advertisSlider", {
     slidesPerView: "auto",
     spaceBetween: 24,
+    breakpoints: {
+      320: {
+        spaceBetween: 12,
+      },
+      1024: {
+        spaceBetween: 24,
+      },
+    },
   });
 
   var swiperBlogSlider = new Swiper(".blog-slider", {
@@ -21,9 +29,13 @@ jQuery(document).ready(function ($) {
       nextEl: ".swiper-button-next.btn-blog",
       prevEl: ".swiper-button-prev.btn-blog",
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
-  var swiperProductSlider = new Swiper(".productSlider", {
+  var swiperProductSlider = new Swiper("#sproduct-best-seller", {
     slidesPerView: 5,
     spaceBetween: 16,
     navigation: {
@@ -37,24 +49,46 @@ jQuery(document).ready(function ($) {
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 15,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 15,
       },
       1024: {
         slidesPerView: 4,
-        spaceBetween: 50,
+        spaceBetween: 30,
+      },
+      1280: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+  var swiperProductSlider = new Swiper("#sproduct-new", {
+    slidesPerView: 5,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: ".swiper-button-next.next-btn-news",
+      prevEl: ".swiper-button-prev.prev-btn-news",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
       },
       1280: {
         slidesPerView: 5,
@@ -66,6 +100,10 @@ jQuery(document).ready(function ($) {
   var swiperCategorySliderChair = new Swiper("#category-chair", {
     slidesPerView: 4,
     spaceBetween: 16,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next.next-category-chair",
       prevEl: ".swiper-button-prev.prev-category-chair",
@@ -73,24 +111,15 @@ jQuery(document).ready(function ($) {
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 15,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
+        slidesPerView: 3,
+        spaceBetween: 15,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 30,
       },
       1280: {
         slidesPerView: 4,
@@ -102,6 +131,10 @@ jQuery(document).ready(function ($) {
   var swiperCategorySlider = new Swiper("#category-sport", {
     slidesPerView: 4,
     spaceBetween: 16,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next.next-category-sport",
       prevEl: ".swiper-button-prev.prev-category-sport",
@@ -109,24 +142,15 @@ jQuery(document).ready(function ($) {
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 15,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
+        slidesPerView: 3,
+        spaceBetween: 15,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 30,
       },
       1280: {
         slidesPerView: 4,
@@ -142,6 +166,20 @@ jQuery(document).ready(function ($) {
       el: ".swiper-pagination.pagination-video",
       clickable: true,
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+    },
   });
 
   var swiperBlogNews = new Swiper(".blog-news-slider", {
@@ -150,6 +188,20 @@ jQuery(document).ready(function ($) {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
     },
   });
 

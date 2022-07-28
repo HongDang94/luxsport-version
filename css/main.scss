@@ -1,6 +1,6 @@
 header {
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,8 +11,30 @@ header {
     align-items: center;
   }
 
-  ul {
+  .list-page {
     li {
+      a {
+        position: relative;
+        line-height: 58px !important;
+        display: block;
+        margin-bottom: 0 !important;
+
+        &:before {
+          content: "";
+          display: none;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          top: 56px;
+          background: #ed1c24;
+          position: absolute;
+        }
+        &:hover {
+          &:before {
+            display: block;
+          }
+        }
+      }
       margin-right: 33px;
       &:last-child {
         margin-right: 0;
@@ -38,7 +60,26 @@ header {
   }
 
   .btn-group-wrap {
-    margin-left: 21px;
+    margin-left: 9px;
+  }
+
+  .btn-search {
+    background: #f3f4f4 url(../img/icon-search.svg) center no-repeat;
+    &:hover, &:focus {
+      background: #FEF8F8 url(../img/icon-search-hover.svg) center no-repeat;
+    }
+  }
+  .btn-call {
+    background: #f3f4f4 url(../img/icon-call.svg) center no-repeat;
+    &:hover, &:focus {
+      background: #FEF8F8 url(../img/icon-call-hover.svg) center no-repeat;
+    }
+  }
+  .btn-cart {
+    background: #f3f4f4 url(../img/icon-cart.svg) center no-repeat;
+    &:hover, &:focus {
+      background: #FEF8F8 url(../img/icon-cart.svg) center no-repeat;
+    }
   }
 }
 
@@ -138,9 +179,10 @@ footer {
 img.thumb {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   left: 0;
   top: 0;
+  border-radius: 8px;
 }
 iframe {
   border-radius: 8px;
@@ -158,6 +200,7 @@ iframe {
 .advertisSlider {
   .swiper-slide {
     width: 356px;
+    border-radius: 8px;
   }
 }
 
@@ -191,18 +234,11 @@ iframe {
   .product-title {
     margin-top: 8px;
     color: #101828;
-  }
-  .product-title {
-    margin-top: 8px;
-    color: #101828;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-  }
-  .product-title {
-    margin-top: 8px;
-    color: #101828;
+    height: 44px;
   }
   .price-sale {
     margin-top: 8px;
@@ -297,6 +333,8 @@ iframe {
   }
   .blog-content {
     padding: 14px 16px;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
   }
   .title {
     color: #101828;
@@ -305,6 +343,7 @@ iframe {
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-bottom: 0;
+    height: 48px;
     &:hover {
       color: #ed1c24;
     }
@@ -312,6 +351,7 @@ iframe {
   .p2 {
     margin-top: 4px;
     line-height: 22px;
+    height: 66px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -338,6 +378,7 @@ iframe {
     padding: 14px 16px;
   }
   .title {
+    height: 44px;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
@@ -375,7 +416,7 @@ iframe {
     color: #fff;
   }
   .small-text {
-    margin-top: 6px;
+    margin-top: 8px;
     color: #fff;
   }
 }
@@ -433,4 +474,17 @@ iframe {
 
 .list-footer {
   padding: 24px 0;
+}
+
+.video-slider {
+  overflow: hidden;
+  &.swiper {
+    overflow: visible;
+  }
+  .swiper-wrapper {
+    padding-bottom: 38px;
+  }
+  .swiper-pagination {
+    display: block;
+  }
 }

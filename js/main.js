@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  var swiperCategorySliderChair = new Swiper("#category-chair", {   
+  var swiperCategorySliderChair = new Swiper("#category-chair", {
     slidesPerView: 4,
     spaceBetween: 16,
     navigation: {
@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  var swiperCategorySlider = new Swiper("#category-sport", {   
+  var swiperCategorySlider = new Swiper("#category-sport", {
     slidesPerView: 4,
     spaceBetween: 16,
     navigation: {
@@ -67,4 +67,25 @@ jQuery(document).ready(function ($) {
       clickable: true,
     },
   });
+
+  (gnbWrapMo = $(".fp_gnb_mo")),
+    (gnbMoOpenBtn = $(".btn_gnbopen")),
+    (gnbMoClsBtn = $(".btn_gnbclose"));
+
+  var gnbButtonMobile = function () {
+    gnbMoOpenBtn.on("click", function (e) {
+      var target = $(e.currentTarget);
+      gnbWrapMo.stop().animate({ left: "0" }, 200, "swing", function () {
+        $(this).on("clickoutside", function () {
+          gnbMoClsBtn.trigger("click");
+        });
+      });
+      $("body").css("overflow", "hidden");
+    });
+    gnbMoClsBtn.on("click", function () {
+      gnbWrapMo.stop().animate({ left: "-181px" }, 200, "swing");
+      gnbWrapMo.off("clickoutside");
+      $("body").css("overflow", "visible");
+    });
+  };
 });

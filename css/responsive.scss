@@ -1,5 +1,10 @@
 @media (min-width: 1400px) and (max-width: 1920px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 1140px;
   }
 }
@@ -21,5 +26,40 @@
     img {
       display: none;
     }
+  }
+  header {
+    display: none;
+  }
+  .btn_gnbopen {
+    display: block;
+    position: absolute;
+    left: 8%;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_menu.svg);
+  }
+  .btn_gnbopen {
+    display: block;
+    position: absolute;
+    left: 8%;
+    width: 32px;
+    height: 32px;
+    background: url(../img/ico_menu.svg);
+  }
+  .fp_gnb_mo.d-none {
+    display: block !important;
+  }
+  .fp_gnb_mo {
+    display: block;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    left: -181px;
+    bottom: 0;
+    width: 181px;
+    background: #fff;
+    text-align: left;
+    color: #fff;
+    z-index: 101;
   }
 }

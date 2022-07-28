@@ -66,27 +66,37 @@
             >
               <img src="./img/icon-search.svg" alt="" />
             </button>
-            <form class="dropdown-menu p-4">
-              <div class="mb-3">
-                <label for="search-dropdown" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="search-dropdown"
-                  placeholder="Typing..."
-                />
-              </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
+            <form class="dropdown-menu">
+              <label for="search-dropdown" class="form-label">Search</label>
+              <input
+                type="email"
+                class="form-control"
+                id="search-dropdown"
+                placeholder="Typing..."
+              />
+              <p class="p2"></p>
+              <ul class="result-list-product">
+                <li>
+                  <div class="box-img">
+                    <img src="./img/product/product-1.png" alt="" />
+                  </div>
+                  <div class="box-content">
+                    <p class="p2">
+                      Ghế Massage Lux Sport Boss Ghế Massage Lux Sport Boss ...
+                    </p>
+                    <strong class="h4"></strong>
+                  </div>
+                </li>
+              </ul>
             </form>
           </div>
           <div class="btn-group">
             <button
               type="button"
-              class="btn-icon btn btn-danger dropdown-toggle"
+              class="btn-icon btn dropdown-toggle"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              data-bs-auto-close="outside"
             >
               <img src="./img/icon-call.svg" alt="" />
             </button>

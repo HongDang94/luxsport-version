@@ -234,25 +234,33 @@ a:hover {
   height: auto;
 }
 
-.prev-btn-style2 {
+.prev-category-sport,
+.prev-category-chair {
   left: auto;
   right: 64px;
   top: 44px;
 }
 
-.next-btn-style2 {
+.next-category-sport,
+.next-category-chair {
   left: auto;
   right: 16px;
   top: 44px;
 }
 
-.prev-btn-style2, .next-btn-style2 {
+.prev-category-sport,
+.next-category-sport,
+.prev-category-chair,
+.next-category-chair {
   width: 32px;
   height: 32px;
   box-shadow: none;
 }
 
-.next-btn-style2:after, .prev-btn-style2:after {
+.next-category-sport:after,
+.prev-category-sport:after,
+.next-category-chair:after,
+.prev-category-chair:after {
   width: 32px;
   height: 32px;
 }
@@ -274,4 +282,92 @@ a:hover {
 
 .swiper-button-next.btn-blog {
   right: -34px;
+}
+
+.gnb-mo {
+  display: none;
+  justify-content: space-between;
+}
+.gnb-mo button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: transparent;
+}
+.gnb-mo .btn-group-action {
+  display: flex;
+  align-items: center;
+}
+.gnb-mo .btn-group-action button + button {
+  margin-left: 10px;
+}
+
+.btn_menu {
+  width: 32px;
+  height: 32px;
+}
+
+.btn_close {
+  position: absolute;
+  top: 35px;
+  right: 12px;
+  padding: 8px;
+}
+
+.gnb {
+  display: block;
+  position: fixed;
+  overflow-y: auto;
+  height: 100%;
+  top: 0;
+  left: -351px;
+  width: 351px;
+  text-align: left;
+  background: #121212;
+  z-index: 300;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-overflow-scrolling: touch;
+}
+
+.vka {
+  width: 60px;
+  max-width: unset;
+  height: 60px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 50%;
+  background: #c31d1d;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  right: 35px;
+  bottom: 10px;
+  z-index: 1000;
+  overflow: hidden;
+  transform: rotate(0deg);
+  transition: all 0.15s cubic-bezier(0.15, 0.87, 0.45, 1.23);
+}
+
+.vka-wrapper {
+  position: fixed;
+  bottom: 32px;
+  z-index: 9999999;
+  right: 0px;
+}
+
+.icon-cps-vka-menu {
+  width: 46px;
+  height: 46px;
+  margin: 0 !important;
+}
+
+.dropdown-menu {
+  width: 356px;
+  background: #ffffff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 18px 28px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@
   <body>
     <header>
       <div>
-        <a href="#." target="_blank" class="logo"
+        <a href="https://luxsport.com.vn/" target="_blank" class="logo"
           ><img src="./img/logo.png" alt="Lux Sport"
         /></a>
         <ul>
@@ -56,12 +56,45 @@
           </li>
         </ul>
         <div class="btn-group-wrap">
-          <button type="button" class="btn btn-icon">
-            <img src="./img/icon-search.svg" alt="" />
-          </button>
-          <button type="button" class="btn btn-icon">
-            <img src="./img/icon-call.svg" alt="" />
-          </button>
+          <div class="dropdown">
+            <button
+              type="button"
+              class="btn btn-icon"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <img src="./img/icon-search.svg" alt="" />
+            </button>
+            <form class="dropdown-menu p-4">
+              <div class="mb-3">
+                <label for="search-dropdown" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="search-dropdown"
+                  placeholder="Typing..."
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+          </div>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn-icon btn btn-danger dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./img/icon-call.svg" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </div>
           <button type="button" class="btn btn-icon">
             <img src="./img/icon-cart.svg" alt="" />
           </button>
@@ -69,23 +102,32 @@
       </div>
     </header>
 
-    <!-- Mobile -->
-    <button type="button" class="btn_gnbopen"></button>
-    <a href="#." target="_blank" class="logo"
-      ><img src="./img/logo.png" alt="Lux Sport"
-    /></a>
-    <div class="fp_gnb_mo">
-      <div class="fp_gnb_inner">
-        <div class="gnb-box">
-          <a href="#.">Ghế massage</a>
-          <a href="#.">Thiết bị thể thao</a>
-          <a href="#.">Home gym</a>
-          <a href="#.">Hoạt động xã hội</a>
-          <a href="#.">Bảo hành</a>
-          <a href="#.">Tin tức</a>
-          <a href="#.">Liên hệ</a>
-        </div>
-        <button type="button" class="btn_gnbclose"></button>
+    <div class="gnb-mo">
+      <button type="button" class="btn_menu">
+        <img src="./img/icon-hamberger-mo.svg" alt="" />
+      </button>
+
+      <a href="https://luxsport.com.vn/" target="_blank" class="logo"
+        ><img src="./img/logo.png" alt="Lux Sport"
+      /></a>
+      <div class="btn-group-action">
+        <button type="button">
+          <img src="./img/icon-search-mo.svg" alt="" />
+        </button>
+        <button type="button">
+          <img src="./img/icon-cart-mo.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div class="gnb menu_type">
+      <div class="gnb_wrap">
+        <button type="button" class="btn_close">
+          <img src="./img/icon-close-mo.svg" alt="" />
+        </button>
+        <ul>
+          <li><a href="#."></a></li>
+        </ul>
       </div>
     </div>
 
@@ -249,6 +291,7 @@
                     <del><span class="price">32.990.000 đ</span></del>
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
             <div class="tab-pane fade" id="product-new">
@@ -339,7 +382,8 @@
       <div class="container">
         <div class="category-left">
           <a href="#." target="_blank" class="category-banner" target="_blank">
-            <img src="./img/category-1.png" alt="" />
+            <img src="./img/category-1.png" alt="" class="img-pc" />
+            <img src="./img/category-1-mo.png" alt="" class="img-mo" />
             <div class="category-title">
               <p class="h1">Ghế massage</p>
               <p class="p2">Xem tất cả</p>
@@ -348,8 +392,8 @@
         </div>
         <div class="category-right p24">
           <h3 class="mb-3">Ghế massage</h3>
-          <div class="swiper-button-next next-btn-style2"></div>
-          <div class="swiper-button-prev prev-btn-style2"></div>
+          <div class="swiper-button-next next-category-chair"></div>
+          <div class="swiper-button-prev prev-category-chair"></div>
           <div
             id="category-chair"
             class="swiper category-slider product-slider"
@@ -449,7 +493,8 @@
       <div class="container">
         <div class="category-left">
           <a href="#." target="_blank" class="category-banner" target="_blank">
-            <img src="./img/category-2.png" alt="" />
+            <img src="./img/category-2.png" alt="" class="img-pc" />
+            <img src="./img/category-2-mo.png" alt="" class="img-mo" />
             <div class="category-title">
               <p class="h1">Thiết bị thể thao</p>
               <p class="p2">Xem tất cả</p>
@@ -458,8 +503,8 @@
         </div>
         <div class="category-right p24">
           <h3 class="mb-3">Thiết bị thể thao</h3>
-          <div class="swiper-button-next next-btn-style2 sport"></div>
-          <div class="swiper-button-prev prev-btn-style2 sport"></div>
+          <div class="swiper-button-next next-category-sport"></div>
+          <div class="swiper-button-prev prev-category-sport"></div>
           <div
             id="category-sport"
             class="swiper category-slider product-slider"
@@ -733,7 +778,7 @@
               </article>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination pagination-video"></div>
         </div>
       </div>
     </section>
@@ -881,7 +926,7 @@
       <div class="container">
         <div class="row list-footer">
           <!-- Contact -->
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-12 col-12">
             <h4>Cơ sở trải nghiệm</h4>
             <ul class="address-info">
               <li>
@@ -912,7 +957,7 @@
           </div>
 
           <!-- Categories -->
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-6 col-6">
             <h4>Về chúng tôi</h4>
             <ul class="links-footer">
               <li><a href="#." target="_blank">Về Luxsport</a></li>
@@ -923,7 +968,7 @@
           </div>
 
           <!-- Categories -->
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-6 col-6">
             <h4>Về chúng tôi</h4>
             <ul class="links-footer">
               <li><a href="#." target="_blank">Về Luxsport</a></li>
@@ -934,7 +979,7 @@
           </div>
 
           <!-- Categories -->
-          <div class="col-md-2">
+          <div class="col-md-2 col-sm-12 col-12">
             <h4>Information</h4>
             <ul class="links-footer">
               <li>
@@ -998,6 +1043,67 @@
         </div>
       </div>
     </footer>
+
+    <div class="contact_btn js_contact_btn">
+      <div class="vka-wrapper">
+        <input id="vkaCheckbox" type="checkbox" class="vka-checkbox" />
+        <label class="vka" for="vkaCheckbox">
+          <img src="./img/icon-contact.svg" alt="" />
+        </label>
+        <div class="vka-wheel">
+          <a
+            class="vka-action vka-action-4"
+            href="https://zalo.me/0772959888"
+            target="_blank"
+            rel="nofollow"
+            title="Chat Zalo"
+          >
+            <div class="vka-button vka-button-4">
+              <i class="icon-cps-chat-zalo"></i>
+            </div>
+          </a>
+          <a
+            class="vka-action vka-action-2"
+            href="tel:19000065"
+            rel="nofollow"
+            title="Gọi trực tiếp"
+          >
+            <div class="vka-button vka-button-2">
+              <i class="icon-cps-phone"></i>
+            </div>
+          </a>
+          <a
+            class="vka-action vka-action-3"
+            href="https://m.me/luxsportvietnam"
+            rel="nofollow"
+            target="_blank"
+            title="Chat Facebook"
+          >
+            <div class="vka-button vka-button-3">
+              <i class="icon-cps-facebook"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <ul class="lst">
+        <li class="item item_zalo">
+          <a href="https://zalo.me/0772959888" target="_blank"></a>
+        </li>
+        <li class="item item_messenger">
+          <a href="#." target="_blank"></a>
+        </li>
+        <li class="item item_call">
+          <a href="#." target="_blank"></a>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="btn_close js_btn_close"
+        style="opacity: 1; left: 0px"
+      >
+        <i class="ico_close"><span class="blind">Close</span></i>
+      </button>
+    </div>
 
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>
     <script src="./js/vendors/vendor.js"></script>

@@ -30,14 +30,72 @@ jQuery(document).ready(function ($) {
       nextEl: ".swiper-button-next.next-btn",
       prevEl: ".swiper-button-prev.prev-btn",
     },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+      1280: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
   });
 
   var swiperCategorySliderChair = new Swiper("#category-chair", {
     slidesPerView: 4,
     spaceBetween: 16,
     navigation: {
-      nextEl: ".swiper-button-next.next-btn-style2",
-      prevEl: ".swiper-button-prev.prev-btn-style2",
+      nextEl: ".swiper-button-next.next-category-chair",
+      prevEl: ".swiper-button-prev.prev-category-chair",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -45,8 +103,35 @@ jQuery(document).ready(function ($) {
     slidesPerView: 4,
     spaceBetween: 16,
     navigation: {
-      nextEl: ".swiper-button-next.next-btn-style2.sport",
-      prevEl: ".swiper-button-prev.prev-btn-style2.sport",
+      nextEl: ".swiper-button-next.next-category-sport",
+      prevEl: ".swiper-button-prev.prev-category-sport",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -54,7 +139,7 @@ jQuery(document).ready(function ($) {
     slidesPerView: 3,
     spaceBetween: 24,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination.pagination-video",
       clickable: true,
     },
   });
@@ -68,26 +153,28 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  (gnbWrapMo = $(".fp_gnb_mo")),
-    (gnbMoOpenBtn = $(".btn_gnbopen")),
-    (gnbMoClsBtn = $(".btn_gnbclose"));
-
-  var gnbButtonMobile = function () {
-    gnbMoOpenBtn.on("click", function (e) {
-      var target = $(e.currentTarget);
-      gnbWrapMo.stop().animate({ left: "0" }, 200, "swing", function () {
-        $(this).on("clickoutside", function () {
-          gnbMoClsBtn.trigger("click");
-        });
-      });
-      $("body").css("overflow", "hidden");
-    });
-    gnbMoClsBtn.on("click", function () {
-      gnbWrapMo.stop().animate({ left: "-181px" }, 200, "swing");
-      gnbWrapMo.off("clickoutside");
-      $("body").css("overflow", "visible");
+  var openMenu = function () {
+    $(".btn_menu").on("click", function () {
+      $(".gnb").show();
+      $("body").addClass("show_menu");
+      $(".gnb")
+        .stop()
+        .animate({ left: "0" }, 600, "easeInOutExpo", function () {});
     });
   };
 
-  gnbButtonMobile();
+  var closeMenu = function () {
+    $(".btn_close").on("click", function () {
+      $("body").removeClass("show_menu");
+      $(".gnb")
+        .stop()
+        .animate({ left: "-100%" }, 600, "easeInOutExpo", function () {
+          //scrollLock(false);
+          $(".gnb").hide();
+        });
+    });
+  };
+
+  openMenu();
+  closeMenu();
 });

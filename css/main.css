@@ -42,12 +42,12 @@ header .btn-group-wrap {
 }
 .intro-product .nav-pills .nav-link.active {
   background: transparent;
-  color: #ED1C24;
+  color: #ed1c24;
 }
 .intro-product .nav-pills .nav-link {
   padding: 0;
   margin: 0 32px 0 0;
-  color: #878B94;
+  color: #878b94;
 }
 
 .section-method-contact {
@@ -104,7 +104,7 @@ footer h4 {
 }
 .address-info a:hover,
 .links-footer a:hover {
-  color: #ED1C24;
+  color: #ed1c24;
 }
 
 .y-video {
@@ -160,7 +160,7 @@ iframe {
   border: 1px solid #fff;
 }
 .product-slider .swiper-slide:hover {
-  border: 1px solid #E7E8E9;
+  border: 1px solid #e7e8e9;
   border-radius: 8px;
 }
 .product-slider .sale {
@@ -168,7 +168,7 @@ iframe {
   position: absolute;
   width: 61px;
   height: 24px;
-  background: #3982F7;
+  background: #3982f7;
   border-radius: 4px;
   top: 12px;
   left: 12px;
@@ -176,7 +176,7 @@ iframe {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .product-slider .product-title {
   margin-top: 8px;
@@ -199,7 +199,7 @@ iframe {
 }
 .product-slider .price {
   margin-top: 4px;
-  color: #878B94;
+  color: #878b94;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -239,7 +239,7 @@ iframe {
 
 .blog {
   position: relative;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
 .blog h3 {
@@ -273,7 +273,7 @@ iframe {
   margin-bottom: 11px;
 }
 .section-blog article:hover {
-  border: 1px solid #E4E9F1;
+  border: 1px solid #e4e9f1;
 }
 .section-blog .blog-content {
   padding: 14px 16px;
@@ -287,7 +287,7 @@ iframe {
   margin-bottom: 0;
 }
 .section-blog .title:hover {
-  color: #ED1C24;
+  color: #ed1c24;
 }
 .section-blog .p2 {
   margin-top: 4px;
@@ -307,7 +307,7 @@ iframe {
 }
 .section-blog-news .swiper-slide {
   width: 356px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   text-align: left;
   justify-content: flex-start;
@@ -327,20 +327,20 @@ iframe {
   overflow: hidden;
 }
 .section-blog-news .title:hover {
-  color: #ED1C24;
+  color: #ed1c24;
 }
 .section-blog-news .des {
   margin-top: 8px;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #878B94;
+  color: #878b94;
 }
 .section-blog-news .read-more {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #ED1C24;
+  color: #ed1c24;
 }
 
 .section-newsletter {
@@ -369,12 +369,12 @@ iframe {
 }
 .newsletter-wrap .form-control {
   width: 300px;
-  background: #585D69;
+  background: #585d69;
   border-radius: 4px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #B7BABF;
+  color: #b7babf;
   border: 0;
 }
 

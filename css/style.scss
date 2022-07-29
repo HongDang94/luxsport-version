@@ -82,19 +82,24 @@ h5,
   border: 0;
 }
 
-.btn-primary {
+.btn-danger {
   padding: 10px 12px;
   height: 44px;
   background: #ed1c24;
-  border-radius: 0px 4px 4px 0px;
-}
+  border-radius: 4px;
+  min-width: 109px;
 
-.btn-secondary {
+}
+.btn-primary {
   padding: 10px 12px;
   min-width: 109px;
   height: 44px;
   background: #3982f7;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 4px;
+  min-width: 109px;
+  &:hover {
+    background: #0b5ed7;
+  }
 }
 
 ul,
@@ -616,4 +621,16 @@ a {
 
 .swiper-pagination {
   display: none;
+}
+
+.label-blue {
+  width: 138px;
+  height: 26px;
+  padding: 4px 12px;
+  background: #f5f9ff;
+  border-radius: 4px;
+  color: #3982F7;
+  + .label-blue {
+    margin-right: 8px;
+  }
 }

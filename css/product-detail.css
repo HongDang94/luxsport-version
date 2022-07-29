@@ -1,0 +1,117 @@
+.breadcrumb {
+  padding: 18px 0;
+  margin-bottom: 0;
+}
+.breadcrumb li:before {
+  content: "";
+  background: url(../img/icon-arrow.svg) no-repeat;
+  margin: 0 8px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.breadcrumb li:first-child::before {
+  display: none;
+}
+.breadcrumb li a {
+  font-weight: 500;
+  color: #101828;
+}
+.breadcrumb li a:hover {
+  color: #ed1c24;
+}
+.breadcrumb li.active {
+  color: #878b94;
+}
+
+.section-detail-product .list-label {
+  margin-top: 14px;
+}
+.section-detail-product h3,
+.section-detail-product h4 {
+  color: #101828;
+}
+.section-detail-product .p2 {
+  margin-top: 16px;
+  color: #878b94;
+}
+
+.detail-left .p-3,
+.detail-right .p-3 {
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.detail-right .input-group {
+  margin-top: 20px;
+}
+.detail-right .input-group .form-control {
+  background: #f9fafa;
+  color: #b7babf;
+}
+
+.btn-group-methodBuy {
+  margin-top: 17px !important;
+  display: flex;
+  margin: 0 -8px;
+}
+.btn-group-methodBuy button {
+  flex: 1;
+  margin: 0 8px;
+}
+
+.list-gift {
+  padding: 18px 16px 40px;
+  border-bottom: 1px solid #f3f4f4;
+  margin: 0 -16px;
+}
+.list-gift li {
+  margin-top: 26px;
+  display: flex;
+  align-items: flex-start;
+}
+.list-gift li:before {
+  content: "";
+  background: url(../img/gift.svg) no-repeat;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.list-gift li:first-child {
+  margin-top: 0;
+}
+
+.price-detail {
+  margin-top: 14px;
+}
+.price-detail .h1 {
+  margin-bottom: 0;
+  display: block;
+}
+.price-detail .price-origin {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #b7babf;
+}
+.price-detail .discount-percent {
+  margin-left: 4px;
+  color: #5ac51c;
+}
+
+.detail-product-slider .swiper-button-next,
+.detail-product-slider .swiper-button-prev {
+  background: #f9fafa;
+}
+
+.slider-thumb .swiper-slide {
+  height: 102px;
+  border: 1px solid #f3f4f4;
+  border-radius: 16px;
+}
+.slider-thumb .swiper-slide img {
+  width: 100%;
+}/*# sourceMappingURL=product-detail.css.map */

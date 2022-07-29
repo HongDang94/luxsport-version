@@ -212,6 +212,10 @@
 }
 
 @media (max-width: 767px) {
+  .section-category .swiper-button-next,
+  .section-category .swiper-button-prev {
+    display: none;
+  }
   .mt24 {
     margin-top: 16px;
   }

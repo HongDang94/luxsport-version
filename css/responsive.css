@@ -286,6 +286,9 @@
 .section-category .swiper-button-prev {
     display: block;
   }
+  .view-all-productc {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .img-mo576 {

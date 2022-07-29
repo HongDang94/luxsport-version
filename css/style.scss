@@ -88,7 +88,6 @@ h5,
   background: #ed1c24;
   border-radius: 4px;
   min-width: 109px;
-
 }
 .btn-primary {
   padding: 10px 12px;
@@ -629,8 +628,35 @@ a {
   padding: 4px 12px;
   background: #f5f9ff;
   border-radius: 4px;
-  color: #3982F7;
+  color: #3982f7;
   + .label-blue {
     margin-right: 8px;
   }
+}
+
+.pagination {
+  margin-top: 44px;
+  justify-content: flex-end;
+}
+.page-item {
+  margin-left: 9px;
+}
+.page-item .page-link {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e7e8e9;
+  border-radius: 4px;
+  color: #101828;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.page-item:first-child .page-link {
+  border-radius: 4px;
+}
+
+.active > .page-link,
+.page-link.active {
+  color: #b7babf;
+  background: #ffffff;
 }

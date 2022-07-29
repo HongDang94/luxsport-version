@@ -294,6 +294,10 @@ a {
 .gnb-mo {
   display: none;
   justify-content: space-between;
+  box-shadow: 0px 1px 0px #e7e7e7;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
   button {
     display: flex;

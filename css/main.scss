@@ -521,8 +521,11 @@ a.view-all {
     margin-bottom: 16px;
   }
   li {
-    display: flex;
     margin-bottom: 16px;
+    a {
+      display: flex;
+      width: 100%;
+    }
     &:hover {
       background: #f9fafa;
       border-radius: 8px;

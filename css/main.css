@@ -492,8 +492,11 @@ a.view-all {
   margin-bottom: 16px;
 }
 .result-list-product li {
-  display: flex;
   margin-bottom: 16px;
+}
+.result-list-product li a {
+  display: flex;
+  width: 100%;
 }
 .result-list-product li:hover {
   background: #f9fafa;

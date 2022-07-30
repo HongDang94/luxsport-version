@@ -188,7 +188,7 @@
   }
   .vka, .vka-button {
     right: 10px;
-    bottom: 20px;
+    bottom: 50px;
     width: 48px;
     height: 48px;
   }
@@ -200,13 +200,13 @@
     right: 10px;
   }
   .vka-wheel .vka-action-2 {
-    bottom: -11px;
+    bottom: 19px;
   }
   .vka-wheel .vka-action-4 {
-    bottom: 42px;
+    bottom: 73px;
   }
   .vka-wheel .vka-action-3 {
-    bottom: 96px;
+    bottom: 128px;
   }
   .icon-cps-vka-menu {
     width: 48px;

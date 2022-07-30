@@ -43,6 +43,14 @@ header {
       &:last-child {
         margin-right: 0;
       }
+      &.active {
+        a {
+          color: #ed1c24;
+          &:before {
+            display: block;
+          }
+        }
+      }
     }
   }
   h1 {

@@ -40,6 +40,12 @@ header .list-page li a:hover:before {
 header .list-page li:last-child {
   margin-right: 0;
 }
+header .list-page li.active a {
+  color: #ed1c24;
+}
+header .list-page li.active a:before {
+  display: block;
+}
 header h1 {
   font-weight: 700;
   font-size: 18px;

@@ -63,6 +63,18 @@ jQuery(document).ready(function ($) {
     
       });
 
+      function SrollTab() {
+        $('.btn-scroll-swiper .swiper-wrapper a[href*="#"]').on('click', function (){
+          var $href = $(this).attr('href');
+          var $anchor = $($href).offset();
+          $('html,body').animate({
+            scrollTop: $anchor.top - 74
+          }, 50);
+        });
+      };
+
+      SrollTab();
+
   });
   
 

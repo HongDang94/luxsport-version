@@ -173,7 +173,7 @@ footer h4 {
 }
 
 .advertisSlider .swiper-slide {
-  width: 356px;
+  width: calc(33.33% - 17px);
   border-radius: 8px;
 }
 
@@ -550,4 +550,35 @@ iframe {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --gap: 20px;
+  --cols: 1fr;
+  --max-width: calc(100% - 2 * var(--gap));
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --max-width: 600px;
+    --aside-width: 200px;
+    --cols: 1fr var(--aside-width);
+  }
+}
+@media screen and (min-width: 980px) {
+  :root {
+    --max-width: 900px;
+    --aside-width: 300px;
+  }
 }/*# sourceMappingURL=main.css.map */

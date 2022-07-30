@@ -6,7 +6,18 @@
 .text-mo {
   display: none ;
 }
-@media (min-width: 1400px) and (max-width: 1920px) {
+@media (min-width: 1656px) and (max-width: 1920px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1596px;
+  }
+}
+
+@media (min-width: 1170px) and (max-width: 1596px) {
   .container,
   .container-lg,
   .container-md,

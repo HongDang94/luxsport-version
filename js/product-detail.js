@@ -25,20 +25,30 @@ jQuery(document).ready(function ($) {
           swiper: swiper,
         },
       });
+      var tabContent  = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: tabTit,
+        },
+      });
+      tabContent.on('slideChange', function() {
+        var idx = tabContent.activeIndex;
+        tabTit.slideTo(idx, 500);
+    });
 
-      // var swiper = new Swiper(".btn-scroll-swiper", {
-      //   spaceBetween: 16,
-      //   hashNavigation: {
-      //     watchState: true,
-      //   },
-      //   pagination: {
-      //     el: '.swiper-pagination',
-      //     clickable: true,
-      //       renderBullet: function (index, className) {
-      //         return '<span class="' + className + '">' + (menu[index]) + '</span>';
-      //       },
-      //   },
-      // });
+      var tabTit  = new Swiper(".btn-scroll-swiper", {
+        spaceBetween: 16,
+  
+        slidesPerView: 'auto',
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        slideToClickedSlide: true,
+      });
       var swiperVideoDetail = new Swiper(".video-slider-detail", {
         slidesPerView: "auto",
         spaceBetween: 24,

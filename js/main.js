@@ -63,6 +63,10 @@ jQuery(document).ready(function ($) {
         slidesPerView: 5,
         spaceBetween: 30,
       },
+      1656: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -92,6 +96,10 @@ jQuery(document).ready(function ($) {
       },
       1280: {
         slidesPerView: 5,
+        spaceBetween: 30,
+      },
+      1656: {
+        slidesPerView: 6,
         spaceBetween: 30,
       },
     },
@@ -125,6 +133,10 @@ jQuery(document).ready(function ($) {
         slidesPerView: 4,
         spaceBetween: 30,
       },
+      1656: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -156,6 +168,10 @@ jQuery(document).ready(function ($) {
         slidesPerView: 4,
         spaceBetween: 30,
       },
+      1656: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -179,6 +195,10 @@ jQuery(document).ready(function ($) {
         slidesPerView: 3,
         spaceBetween: 24,
       },
+      1654: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
     },
   });
 
@@ -201,6 +221,10 @@ jQuery(document).ready(function ($) {
       1280: {
         slidesPerView: 3,
         spaceBetween: 24,
+      },
+      1654: {
+        slidesPerView: 4,
+        spaceBetween: 30,
       },
     },
   });

@@ -38,17 +38,21 @@ jQuery(document).ready(function ($) {
       tabContent.on('slideChange', function() {
         var idx = tabContent.activeIndex;
         tabTit.slideTo(idx, 500);
-    });
+      });
+      $(".btn-scroll-swiper .swiper-wrapper a").click(function() {
+        $(this).addClass('selected');
+          $(this).siblings().removeClass('selected');
+      });
 
       var tabTit  = new Swiper(".btn-scroll-swiper", {
         spaceBetween: 16,
-  
         slidesPerView: 'auto',
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         slideToClickedSlide: true,
       });
+
       var swiperVideoDetail = new Swiper(".video-slider-detail", {
         slidesPerView: "auto",
         spaceBetween: 24,
@@ -58,7 +62,7 @@ jQuery(document).ready(function ($) {
         },
     
       });
-      
+
   });
   
 

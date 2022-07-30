@@ -63,6 +63,7 @@
 }
 
 @media (max-width: 1024px) {
+
   .swiper-pagination {
     display: block;
   }
@@ -203,13 +204,39 @@
       padding-bottom: 40px;
     }
   }
-  .vka {
-    right: 16px;
-    bottom: 31px;
+  .vka-wrapper {
+    bottom: 20px;
+  }
+  .vka, .vka-button {
+    right: 10px;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+  }
+  .vka-button {
+    img {
+      width: 48px;
+      height: 48px;
+    }
   }
   .vka-wheel {
-    right: 16px;
+    right: 10px;
   }
+  .vka-wheel .vka-action-2 {
+    bottom: -11px;
+  }
+  .vka-wheel .vka-action-4{
+    bottom: 42px;
+  }
+  .vka-wheel .vka-action-3{
+    bottom: 96px;
+  }
+  .icon-cps-vka-menu {
+    width: 48px;
+    height: 48px;
+    background: url(../img/contact.png);
+    background-size: 100%;
+}
   .category-slider {
     .swiper-pagination {
       display: none;

@@ -505,7 +505,8 @@ a {
 .icon-cps-vka-menu {
   width: 64px;
   height: 64px;
-  background: url(../img/contact.png);
+  background-image: url(../img/contact.png);
+  background-size: 100% auto;
 }
 .vka-checkbox:checked ~ .vka .icon-cps-vka-menu {
   width: 64px;

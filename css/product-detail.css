@@ -110,6 +110,12 @@
 .detail-product-slider .swiper-button-prev {
   background: #f9fafa;
 }
+.detail-product-slider .swiper-button-next {
+  right: 16px;
+}
+.detail-product-slider .swiper-button-prev {
+  left: 16px;
+}
 .detail-product-slider .swiper-slide {
   border: 1px solid #f3f4f4;
 }

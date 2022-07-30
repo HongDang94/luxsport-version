@@ -137,6 +137,12 @@
   .swiper-button-prev {
     background: #f9fafa;
   }
+  .swiper-button-next {
+    right: 16px;
+  }
+  .swiper-button-prev {
+    left: 16px;
+  }
   .swiper-slide {
     border: 1px solid #f3f4f4;
     img {

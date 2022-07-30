@@ -20,7 +20,7 @@
     <title>Ghế massage nhập khẩu Luxsport</title>
   </head>
 
-  <body class="product-detail">
+  <body class="page-product-detail">
     <header>
       <div>
         <a href="https://luxsport.com.vn/" target="_blank" class="logo"
@@ -157,16 +157,13 @@
 
     <div class="gnb-mo">
       <button type="button" class="btn_menu">
-        <img src="./img/icon-hamberger-mo.svg" alt="" />
+        <img src="./img/icon-prev.png" alt="" />
       </button>
 
       <a href="https://luxsport.com.vn/" target="_blank" class="logo"
         ><img src="./img/logo.png" alt="Lux Sport"
       /></a>
       <div class="btn-group-action">
-        <button type="button">
-          <img src="./img/icon-search-mo.svg" alt="" />
-        </button>
         <button type="button">
           <img src="./img/icon-cart-mo.svg" alt="" />
         </button>
@@ -233,7 +230,7 @@
     <section class="section-detail-product">
       <div class="container">
         <div class="row g-6">
-          <div class="col-lg-8 col-md-8 detail-left">
+          <div class="col-lg-8 col-md-12 detail-left">
             <div class="p-3 swiper-container">
               <div class="swiper detail-product-slider">
                 <div class="swiper-wrapper">
@@ -284,20 +281,95 @@
                 </div>
               </div>
             </div>
-
-            <div class="btn-group-scroll">
-              <a href="#video-product" class="btn btn-danger">Video sản phẩm</a>
-              <a href="#introduce-product" class="btn btn-danger"
-                >Giới thiệu sản phẩm</a
-              >
-              <a href="#review-product" class="btn btn-danger"
-                >Thông số kỹ thuật</a
-              >
-              <a href="#qa" class="btn btn-danger">Đánh giá sản phẩm</a>
+          </div>
+          <div class="col-lg-4 col-md-12 detail-right first">
+            <div class="p-3">
+              <h3>Ghế Massage Lux Sport Boss Chair Luxury 2</h3>
+              <div class="list-label">
+                <span class="label-blue">Bảo hành chính hãng</span>
+                <span class="label-blue">Free ship</span>
+              </div>
+              <p class="p2">
+                Ghế Massage Cao Cấp BOSS CHAIR LUX2 là dòng ghế duy nhất +5 con
+                lăn massage Ngọc Bích độc quyền bởi Lux Sport Việt Nam
+              </p>
+              <ul class="list-gift">
+                <li><span>Tặng bạt phủ chống bụi bẩn</span></li>
+                <li><span>Tặng bộ vệ sinh da ghế cao cấp</span></li>
+                <li>
+                  <span>Tặng thảm lông cao cấp, tránh trầy xước sàn nhà</span>
+                </li>
+              </ul>
+              <div class="price-detail">
+                <strong class="h1">160.990.000 đ</strong>
+                <del><span class="price-origin">20.500.000</span></del>
+                <span class="small-text2 discount-percent">-12%</span>
+              </div>
+              <div class="btn-group-methodBuy">
+                <button type="button" class="btn btn-danger">Mua ngay</button>
+                <button type="button" class="btn btn-primary">
+                  Trả góp 0%
+                </button>
+              </div>
             </div>
 
-            <div class="p-3 mt24 video-product" id="video-product">
+            <div class="p-3 mt-3">
+              <h4>Còn băn khoăn về sản phẩm, cần tư vấn?</h4>
+              <p class="p2 mt-1">
+                Để lại số điện thoại, chúng tôi sẽ gọi sau 5’
+              </p>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nhập số điện thoại"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn btn-danger" type="button" id="button-addon2">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-6">
+          <div class="col-lg-8 col-md-12 detail-left">
+            <!-- <div class="swiper btn-scroll-swiper">
+              <div class="swiper-wrapper">
+                <div data-hash="#video-product" class="swiper-slide">Slide 1</div>
+                <div data-hash="#introduce-product" class="swiper-slide">Slide 2</div>
+                <div data-hash="#review-product" class="swiper-slide">Slide 3</div>
+                <div data-hash="#qa" class="swiper-slide">Slide 4</div>
+              </div>
+            </div> -->
+            
+            <div class="btn-group-scroll py24">
+              <a href="#video-product" class="btn active">Video sản phẩm</a>
+              <a href="#introduce-product" class="btn"
+                >Giới thiệu sản phẩm</a
+              >
+              <a href="#review-product" class="btn"
+                >Thông số kỹ thuật</a
+              >
+              <a href="#qa" class="btn">Đánh giá sản phẩm</a>
+            </div>
+
+            <div class="p-3 video-product" id="video-product">
               <h3>Video giới thiệu sản phẩm</h3>
+              <div class="swiper video-slider-detail">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="youtube" id="HXAtbiWhLSk"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="youtube" id="srVomoqIbLE"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="youtube" id="4tVAUuYy3GI"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination pagination-video-detail"></div>
+              </div>
             </div>
             <div class="p-3 mt24 introduce-product" id="introduce-product">
               <h3 class="pt-0">Giới thiệu sản phẩm</h3>
@@ -431,7 +503,7 @@
                       <img src="./img/product/detail-1.png" alt="" />
                     </div>
                     <div class="more-img">
-                      <span class="count-img">4</span>
+                      <span class="count-img">+4</span>
                     </div>
                   </div>
                   <div class="like-box">
@@ -466,14 +538,14 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button
-                      class="accordion-button"
+                      class="accordion-button h4"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne"
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      Accordion Item #1
+                    Ghế massage của Lux Sport có chính sách bảo hành, bảo trì như thế nào?
                     </button>
                   </h2>
                   <div
@@ -483,104 +555,33 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
-                      It is shown by default, until the collapse plugin adds the
-                      appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                      <p class="p2 m-0">Ghế massage phù hợp nhất với những người có bệnh đau nhức về xương khớp, vai gáy và những bệnh như tuần hoàn máu, căng thẳng, lo âu…Ghế massage sẽ giúp bạn xua tan mệt mỏi, căng thẳng, stress và giảm bớt các cơn đau nhức về xương khớp nhiều phần. Bảo vệ sức khỏe hằng ngày cho chính bạn và gia đình, người thân khi chỉ cần bỏ ra 15-30 mỗi ngày mà thôi.</p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Accordion Item #2
+                    <button class="accordion-button h4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                
+						          Ghế massage dành cho những ai là tốt nhất?			
                     </button>
                   </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                     <p class="p2 m-0">
+                      Ghế massage phù hợp nhất với những người có bệnh đau nhức về xương khớp, vai gáy và những bệnh như tuần hoàn máu, căng thẳng, lo âu…Ghế massage sẽ giúp bạn xua tan mệt mỏi, căng thẳng, stress và giảm bớt các cơn đau nhức về xương khớp nhiều phần. Bảo vệ sức khỏe hằng ngày cho chính bạn và gia đình, người thân khi chỉ cần bỏ ra 15-30 mỗi ngày mà thôi.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4  col-md-4 detail-right">
-            <div class="p-3">
-              <h3>Ghế Massage Lux Sport Boss Chair Luxury 2</h3>
-              <div class="list-label">
-                <span class="label-blue">Bảo hành chính hãng</span>
-                <span class="label-blue">Free ship</span>
-              </div>
-              <p class="p2">
-                Ghế Massage Cao Cấp BOSS CHAIR LUX2 là dòng ghế duy nhất +5 con
-                lăn massage Ngọc Bích độc quyền bởi Lux Sport Việt Nam
-              </p>
-              <ul class="list-gift">
-                <li><span>Tặng bạt phủ chống bụi bẩn</span></li>
-                <li><span>Tặng bộ vệ sinh da ghế cao cấp</span></li>
-                <li>
-                  <span>Tặng thảm lông cao cấp, tránh trầy xước sàn nhà</span>
-                </li>
-              </ul>
-              <div class="price-detail">
-                <strong class="h1">160.990.000 đ</strong>
-                <del><span class="price-origin">20.500.000</span></del>
-                <span class="small-text2 discount-percent">-12%</span>
-              </div>
-              <div class="btn-group-methodBuy">
-                <button type="button" class="btn btn-danger">Mua ngay</button>
-                <button type="button" class="btn btn-primary">
-                  Trả góp 0%
-                </button>
-              </div>
-            </div>
-
-            <div class="p-3 mt-3">
-              <h4>Còn băn khoăn về sản phẩm, cần tư vấn?</h4>
-              <p class="p2 mt-1">
-                Để lại số điện thoại, chúng tôi sẽ gọi sau 5’
-              </p>
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nhập số điện thoại"
-                  aria-describedby="button-addon2"
-                />
-                <button class="btn btn-danger" type="button" id="button-addon2">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
         <div class="intro-product p24 mt24">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
@@ -602,7 +603,7 @@
                 data-bs-target="#product-new"
                 type="button"
               >
-                Sản phẩm cùng tầm giá
+                <span class="text-pc">Sản phẩm cùng tầm giá</span> <span class="text-mo">Cùng tầm giá</span>
               </button>
             </li>
           </ul>

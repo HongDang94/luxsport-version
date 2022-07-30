@@ -13,6 +13,7 @@ jQuery(document).ready(function ($) {
           }
         }
       });
+
       var swiper2 = new Swiper(".detail-product-slider", {
         spaceBetween: 10,
         navigation: {
@@ -24,5 +25,29 @@ jQuery(document).ready(function ($) {
         },
       });
 
+      // var swiper = new Swiper(".btn-scroll-swiper", {
+      //   spaceBetween: 16,
+      //   hashNavigation: {
+      //     watchState: true,
+      //   },
+      //   pagination: {
+      //     el: '.swiper-pagination',
+      //     clickable: true,
+      //       renderBullet: function (index, className) {
+      //         return '<span class="' + className + '">' + (menu[index]) + '</span>';
+      //       },
+      //   },
+      // });
+      var swiperVideoDetail = new Swiper(".video-slider-detail", {
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        pagination: {
+          el: ".swiper-pagination.pagination-video-detail",
+          clickable: true,
+        },
+    
+      });
+      
   });
   
+

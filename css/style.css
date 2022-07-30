@@ -672,4 +672,49 @@ a:hover {
 .page-link.active {
   color: #b7babf;
   background: #ffffff;
+}
+
+.accordion-item {
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+.accordion-button {
+  margin: 0;
+}
+
+.accordion-button.collapsed {
+  border-radius: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  border-bottom: 0;
+  background: transparent;
+  color: #101828;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #e7e8e9;
+}
+
+.accordion-button::after {
+  background-image: url(../img/icon-next.png);
+  transform: rotate(90deg);
+  background-size: 12px 18px;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/icon-next.png);
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 1024px) {
+  .breadcrumb {
+    display: none;
+  }
+  .pagination {
+    margin-top: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

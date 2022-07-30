@@ -3,6 +3,9 @@
   display: none !important;
   width: 100%;
 }
+.text-mo {
+  display: none ;
+}
 @media (min-width: 1400px) and (max-width: 1920px) {
   .container,
   .container-lg,
@@ -32,7 +35,7 @@
   header .logo {
     margin-right: 1.568vw;
   }
-  header ul li {
+  header .list-page li {
     margin-right: 1vw;
   }
   .btn-icon {
@@ -213,6 +216,12 @@
 }
 
 @media (max-width: 767px) {
+  .text-mo {
+    display: block;
+  }
+  .text-pc{
+    display: none;
+  }
   .section-category .swiper-button-next,
   .section-category .swiper-button-prev {
     display: none;

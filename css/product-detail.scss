@@ -137,6 +137,12 @@
   .swiper-button-prev {
     background: #f9fafa;
   }
+  .swiper-slide {
+    border: 1px solid #f3f4f4;
+    img {
+      width: 65%;
+    }
+  }
 }
 
 .slider-thumb {
@@ -147,11 +153,15 @@
   );
   .swiper-slide {
     height: 102px;
-    border: 1px solid #f3f4f4;
-    border-radius: 16px;
+    cursor: pointer;
 
     img {
       width: 100%;
+      border: 1px solid #f3f4f4;
+      border-radius: 16px;
+    }
+    &.swiper-slide-thumb-active img {
+      border: 1px solid #3982F7;
     }
   }
 }
@@ -459,11 +469,13 @@
   .btn-review {
     margin-top: 10px;
   }
-  .star-box .star-full:before,.star-box .star-haft:before  {
+  .star-box .star-full:before,
+  .star-box .star-haft:before {
     width: 20px;
     height: 20px;
   }
-  .star-box .star-full, .star-box .star-haft {
+  .star-box .star-full,
+  .star-box .star-haft {
     margin-right: 14px;
   }
 }

@@ -16,6 +16,7 @@ jQuery(document).ready(function ($) {
 
       var swiper2 = new Swiper(".detail-product-slider", {
         spaceBetween: 10,
+        effect: "fade",
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

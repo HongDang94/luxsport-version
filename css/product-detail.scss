@@ -161,7 +161,7 @@
       border-radius: 16px;
     }
     &.swiper-slide-thumb-active img {
-      border: 1px solid #3982F7;
+      border: 1px solid #3982f7;
     }
   }
 }
@@ -409,7 +409,29 @@
   }
 }
 
+.btn-group-bottom {
+  display: none;
+  position: sticky;
+  z-index: 100;
+  bottom: 0;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px -1px 0px #e7e7e7;
+  padding: 6px 16px;
+  .price-detail {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1024px) {
+  .btn-group-method {
+    display: none;
+  }
+  .btn-group-bottom {
+    display: flex;
+  }
   .view {
     img {
       width: 100% !important;

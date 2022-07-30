@@ -83,7 +83,7 @@ h5,
 }
 
 .btn-danger {
-  padding: 10px 12px;
+  padding: 10px 20px;
   height: 44px;
   background: #ed1c24;
   border-radius: 4px;
@@ -687,7 +687,6 @@ a {
   transform: rotate(90deg);
   background-size: 12px 18px;
   background-position: center;
-  margin-left: 10px;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url(../img/icon-next.png);

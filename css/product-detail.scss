@@ -136,6 +136,7 @@
   .swiper-button-next,
   .swiper-button-prev {
     background: #f9fafa;
+    top: calc(50% - 12px);
   }
   .swiper-button-next {
     right: 16px;

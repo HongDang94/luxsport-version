@@ -109,6 +109,7 @@
 .detail-product-slider .swiper-button-next,
 .detail-product-slider .swiper-button-prev {
   background: #f9fafa;
+  top: calc(50% - 12px);
 }
 .detail-product-slider .swiper-button-next {
   right: 16px;

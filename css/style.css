@@ -209,6 +209,7 @@ a:hover {
 .swiper-button-prev:after {
   content: "";
   background: url(../img/icon-prev.png) no-repeat center;
+  background-size: 32px auto;
   width: 64px;
   height: 64px;
 }
@@ -216,6 +217,7 @@ a:hover {
 .swiper-button-next:after {
   content: "";
   background: url(../img/icon-next.png) no-repeat center;
+  background-size: 32px auto;
   width: 64px;
   height: 64px;
 }
@@ -322,6 +324,10 @@ a:hover {
 }
 
 .btn_menu {
+  width: 32px;
+  height: 32px;
+}
+.btn_menu .icon-prev {
   width: 32px;
   height: 32px;
 }
@@ -682,10 +688,11 @@ a:hover {
 
 .accordion-button {
   margin: 0;
+  padding-right: 43px;
 }
 
 .accordion-button.collapsed {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -699,14 +706,14 @@ a:hover {
 }
 
 .accordion-button::after {
-  background-image: url(../img/icon-next.png);
-  transform: rotate(90deg);
-  background-size: 12px 18px;
+  position: absolute;
+  right: 16px;
+  background-image: url(../img/semi-icons-chevron_right.svg);
   background-position: center;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url(../img/icon-next.png);
+  background-image: url(../img/semi-icons-chevron_right.svg);
   transform: rotate(-90deg);
 }
 
@@ -716,5 +723,25 @@ a:hover {
   }
   .pagination {
     margin-top: 16px;
+  }
+  .accordion-item {
+    margin-top: 4px;
+    border: 0;
+  }
+  .accordion-button {
+    padding: 0 40px 0 0;
+    font-size: 14px;
+  }
+  .accordion-button::after {
+    right: 0;
+  }
+  .accordion-body {
+    padding: 20px 0;
+  }
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+  }
+  .accordion-item:not(:first-of-type) {
+    border-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */

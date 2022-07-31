@@ -422,6 +422,10 @@
   align-items: flex-start;
 }
 
+#qa {
+  width: 100%;
+}
+
 @media (max-width: 1280px) {
   .star-box .star-full, .star-box .star-haft {
     margin-right: 10px;

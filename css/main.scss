@@ -379,12 +379,14 @@ footer {
   h3 {
     color: #101828;
   }
-  .swiper-slide {
-    width: 356px;
+  article {
     background: #ffffff;
     border-radius: 8px;
     text-align: left;
     justify-content: flex-start;
+  }
+  .swiper-slide {
+    width: 356px;
   }
   .blog-content {
     padding: 14px 16px;

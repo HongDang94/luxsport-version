@@ -101,6 +101,19 @@ h5,
   }
 }
 
+.btn-white {
+  background: #ffffff;
+  border: 1px solid #e7e8e9;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #878B94;
+  &:hover, &:focus, .active {
+    background: #ED1C24;
+    border: 1px solid #ED1C24;
+    color : #fff;
+  }
+}
+
 ul,
 p {
   margin: 0;
@@ -731,7 +744,7 @@ option {
     width: 222px;
   }
 }
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
   .form-select {
     &.sm {
       width: 158px;

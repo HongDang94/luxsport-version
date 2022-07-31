@@ -346,12 +346,14 @@ footer h4 {
 .section-blog-news h3 {
   color: #101828;
 }
-.section-blog-news .swiper-slide {
-  width: 356px;
+.section-blog-news article {
   background: #ffffff;
   border-radius: 8px;
   text-align: left;
   justify-content: flex-start;
+}
+.section-blog-news .swiper-slide {
+  width: 356px;
 }
 .section-blog-news .blog-content {
   padding: 14px 16px;

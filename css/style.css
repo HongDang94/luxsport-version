@@ -102,6 +102,19 @@ h5,
   background: #0b5ed7;
 }
 
+.btn-white {
+  background: #ffffff;
+  border: 1px solid #e7e8e9;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #878B94;
+}
+.btn-white:hover, .btn-white:focus, .btn-white .active {
+  background: #ED1C24;
+  border: 1px solid #ED1C24;
+  color: #fff;
+}
+
 ul,
 p {
   margin: 0;

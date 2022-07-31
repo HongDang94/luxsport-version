@@ -151,7 +151,7 @@
 }
 
 .page-product-list .pagination {
-  margin: 32px 0 48px;
+  margin: 32px 0 0;
 }
 
 .category-title {
@@ -263,6 +263,10 @@
 
 .btn-reset {
   color: #3982f7;
+}
+
+.page-product-list .section-method-contact {
+  margin-top: 40px;
 }
 
 @media (max-width: 1656px) {

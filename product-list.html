@@ -157,7 +157,7 @@
 
     <div class="gnb-mo">
       <button type="button" class="btn-back-home">
-        <img class="icon-back"  src="./img/icon-prev.png" alt="" />
+        <img class="icon-back" src="./img/icon-prev.png" alt="" />
       </button>
 
       <a href="https://luxsport.com.vn/" target="_blank" class="logo"
@@ -230,8 +230,18 @@
 
     <section class="product-list-wrap">
       <div class="container">
-        <h1 class="category-name mt24">Ghế massage</h1>
-        <div class="box-filter">
+        <div class="category-title mt24">
+          <h1 class="category-name">Ghế massage</h1>
+          <button
+            type="button"
+            class="btn btn-filter mo show-mo"
+            data-bs-toggle="modal"
+            data-bs-target="#modalFilterItem"
+          >
+            Bộ lọc
+          </button>
+        </div>
+        <div class="box-filter show-pc">
           <div class="box box-dropdown">
             <div class="dropdown-filter-left">
               <button type="button" class="btn btn-filter">Bộ lọc</button>
@@ -651,18 +661,10 @@
     </div>
 
     <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#modalFilterItem"
-    >
-      Launch demo modal
-    </button>
 
     <!-- Modal -->
     <div
-      class="modal fade"
+      class="modal fade bottom"
       id="modalFilterItem"
       tabindex="-1"
       aria-labelledby="modalFilterItemLabel"
@@ -691,21 +693,22 @@
               <div class="option-box-mo">
                 <button type="button" class="btn btn-option">Tất cả</button>
                 <button type="button" class="btn btn-option">Bình dân</button>
-                <button type="button" class="btn btn-option">VIP</button>
+                <button type="button" class="btn btn-option active">
+                  VIP
+                </button>
                 <button type="button" class="btn btn-option">Trung cấp</button>
                 <button type="button" class="btn btn-option">Cao cấp</button>
                 <button type="button" class="btn btn-option">Cao cấp</button>
               </div>
             </div>
             <div class="option-box-mo-wrap">
-              <h5 class="p2">Phân khúc</h5>
+              <h5 class="p2">Mức giá</h5>
               <div class="option-box-mo">
                 <button type="button" class="btn btn-option">Tất cả</button>
-                <button type="button" class="btn btn-option">Bình dân</button>
-                <button type="button" class="btn btn-option">VIP</button>
-                <button type="button" class="btn btn-option">Trung cấp</button>
-                <button type="button" class="btn btn-option">Cao cấp</button>
-                <button type="button" class="btn btn-option">Cao cấp</button>
+                <button type="button" class="btn btn-option">Dưới 10tr</button>
+                <button type="button" class="btn btn-option active">Từ 10-20tr</button>
+                <button type="button" class="btn btn-option">Từ 20-40tr</button>
+                <button type="button" class="btn btn-option">Trên 40tr</button>
               </div>
             </div>
           </div>

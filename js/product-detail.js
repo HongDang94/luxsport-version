@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
       });
 
       var tabTit  = new Swiper(".btn-scroll-swiper", {
-        spaceBetween: 16,
+        spaceBetween: 8,
         slidesPerView: 'auto',
         freeMode: true,
         watchSlidesVisibility: true,

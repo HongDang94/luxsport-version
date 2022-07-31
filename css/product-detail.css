@@ -264,6 +264,15 @@
   height: 16px;
   background: url(../img/icon-like.svg) no-repeat;
 }
+.like-box .like span {
+  margin-left: 4px;
+}
+.like-box .like.active {
+  color: #3982F7;
+}
+.like-box .like.active:before {
+  background: url(../img/icon-like-active.svg) no-repeat;
+}
 
 .list-review-img {
   display: flex;

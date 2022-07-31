@@ -300,6 +300,17 @@
       height: 16px;
       background: url(../img/icon-like.svg) no-repeat;
     }
+
+    span {
+      margin-left: 4px;
+    }
+    &.active {
+      color: #3982F7;
+      
+      &:before {
+        background: url(../img/icon-like-active.svg) no-repeat;
+      }
+    }
   }
 }
 

@@ -136,6 +136,17 @@
   }
 }
 
-@media (max-width: 1656px){
- 
+.modal.bottom.fade.show .modal-dialog {
+  bottom: 0;
 }
+.modal.bottom.fade .modal-dialog {
+  bottom: -100%;
+}
+@media (max-width: 1656px){
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+

@@ -156,8 +156,8 @@
     </header>
 
     <div class="gnb-mo">
-      <button type="button" class="btn_menu">
-        <img src="./img/icon-prev.png" alt="" />
+      <button type="button" class="btn-back-home">
+        <img class="icon-back"  src="./img/icon-prev.png" alt="" />
       </button>
 
       <a href="https://luxsport.com.vn/" target="_blank" class="logo"
@@ -240,12 +240,14 @@
                 class="form-select lg"
                 aria-label="Chọn khoảng giá"
               >
+                <option value="0">Tất cả</option>
                 <option value="1" selected>Trên 40tr</option>
                 <option value="2" selected>Từ 20 - 40 triệu</option>
                 <option value="3">Từ 10-20 triệu</option>
                 <option value="4">Dưới 10 triệu</option>
               </select>
               <select required class="form-select sm" aria-label="Chọn loại">
+                <option value="0">Tất cả</option>
                 <option value="1" selected>Cao cấp</option>
                 <option value="2">Cao cấp 2</option>
                 <option value="3">Cao cấp 3</option>
@@ -552,9 +554,7 @@
                 /></a>
               </li>
               <li>
-                <a
-                  target="_blank"
-                  href="#."
+                <a target="_blank" href="#."
                   ><img src="img/tiktok.svg" alt=""
                 /></a>
               </li>
@@ -580,12 +580,12 @@
           <div class="policy-box">
             <p class="small-text">© Luxsport 2022. All rights reserved.</p>
             <a
-                target="_blank"
-                href="http://online.gov.vn/Home/WebDetails/94482"
-              >
-                <img src="./img/gov1.png" alt="" />
-              </a>
-              <a
+              target="_blank"
+              href="http://online.gov.vn/Home/WebDetails/94482"
+            >
+              <img src="./img/gov1.png" alt="" />
+            </a>
+            <a
               target="_blank"
               href="http://online.gov.vn/Home/WebDetails/94482"
             >
@@ -648,6 +648,79 @@
           <a href="#." target="_blank"></a>
         </li>
       </ul>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#modalFilterItem"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalFilterItem"
+      tabindex="-1"
+      aria-labelledby="modalFilterItemLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-back"
+              data-bs-dismiss="modal"
+              aria-label="Black"
+            ></button>
+            <h4 class="modal-title" id="modalFilterItemLabel">Bộ lọc</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="option-box-mo-wrap">
+              <h5 class="p2">Phân khúc</h5>
+              <div class="option-box-mo">
+                <button type="button" class="btn btn-option">Tất cả</button>
+                <button type="button" class="btn btn-option">Bình dân</button>
+                <button type="button" class="btn btn-option">VIP</button>
+                <button type="button" class="btn btn-option">Trung cấp</button>
+                <button type="button" class="btn btn-option">Cao cấp</button>
+                <button type="button" class="btn btn-option">Cao cấp</button>
+              </div>
+            </div>
+            <div class="option-box-mo-wrap">
+              <h5 class="p2">Phân khúc</h5>
+              <div class="option-box-mo">
+                <button type="button" class="btn btn-option">Tất cả</button>
+                <button type="button" class="btn btn-option">Bình dân</button>
+                <button type="button" class="btn btn-option">VIP</button>
+                <button type="button" class="btn btn-option">Trung cấp</button>
+                <button type="button" class="btn btn-option">Cao cấp</button>
+                <button type="button" class="btn btn-option">Cao cấp</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>

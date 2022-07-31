@@ -204,12 +204,15 @@ footer {
 }
 
 .product-slider {
-  .swiper-slide {
+  .swiper-slide, .product-item {
+    position: relative;
     flex-direction: column;
     padding: 12px 12px 8px 12px;
     align-items: flex-start;
     text-align: left;
     border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #fff;
   }
   .swiper-slide:hover {
     border: 1px solid #e7e8e9;
@@ -238,6 +241,9 @@ footer {
     -webkit-box-orient: vertical;
     overflow: hidden;
     height: 44px;
+    &:hover {
+      color: #ed1c24
+    }
   }
   .price-sale {
     margin-top: 8px;
@@ -454,6 +460,11 @@ footer {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
   li {
     margin-right: 8px;
     &:last-child {
@@ -471,10 +482,16 @@ footer {
 
 .policy-box {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   a {
-    margin-left: 12px;
+    margin-left: 20px;
+    height: 33px;
+    display: block;
+    width: 92px;
+    img {
+      width: 100%;
+    }
   }
 }
 

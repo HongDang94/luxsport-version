@@ -219,54 +219,222 @@
     </div>
 
     <section class="section-auto-video">
-      <iframe width="560" height="420" src="https://www.youtube.com/embed/kAmRo5aDTvs?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/J2yhxd-waO4?autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </section>
 
-    <section class="product-list">
+    <section class="product-list-wrap">
       <div class="container">
         <h1 class="category-name mt24">Ghế massage</h1>
         <div class="box-filter">
-          <button type="button"><img src="./img/icon-filter.svg" alt="">Bộ lọc</button>
-          <div class="list list-dropdown">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+          <div class="box box-dropdown">
+            <div class="dropdown-filter-left">
+              <button type="button" class="btn btn-filter">Bộ lọc</button>
+              <select
+                required
+                class="form-select lg"
+                aria-label="Chọn khoảng giá"
+              >
+                <option value="1" selected>Trên 40tr</option>
+                <option value="2" selected>Từ 20 - 40 triệu</option>
+                <option value="3">Từ 10-20 triệu</option>
+                <option value="4">Dưới 10 triệu</option>
+              </select>
+              <select required class="form-select sm" aria-label="Chọn loại">
+                <option value="1" selected>Cao cấp</option>
+                <option value="2">Cao cấp 2</option>
+                <option value="3">Cao cấp 3</option>
+              </select>
+              <select required class="form-select sm" aria-label="Khác">
+                <option value="" selected>Khác</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <div>
+              <select required class="form-select lg" aria-label="Sắp xếp theo">
+                <option value="" selected>Sắp xếp theo</option>
+                <option value="1">Giá từ cao đến thấp</option>
+                <option value="2">Giá từ thấp đến cao</option>
+                <option value="3">Mới trước</option>
+                <option value="4">Cũ trước</option>
+              </select>
             </div>
           </div>
-          <div class="list list-option">
+          <div class="box option-box">
             <span class="p2">Xem theo:</span>
-            <ul>
-              <li></li>
-            </ul>
+            <div class="list-option">
+              <button type="button" class="btn btn-option">
+                Từ 20 - 40 triệu
+              </button>
+              <button type="button" class="btn btn-option">Cao cấp</button>
+              <button type="button" class="btn btn-delete-filter">
+                Xóa lọc
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="category-product product-slider grid mt24">
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
           </div>
         </div>
       </div>
+      <ul class="pagination pagination-md justify-content-center">
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">1</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#.">2</a></li>
+        <li class="page-item"><a class="page-link" href="#.">3</a></li>
+      </ul>
     </section>
 
     <section class="section-newsletter">
@@ -345,7 +513,7 @@
           </div>
 
           <!-- Categories -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-6 about-us">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-12 about-us">
             <h4>Hỗ trợ khách hàng</h4>
             <ul class="links-footer">
               <li>
@@ -362,12 +530,8 @@
 
           <!-- Categories -->
           <div class="col-lg-2 col-md-12 col-sm-12 col-12 more-us">
-            <h4>Thông tin</h4>
+            <h4>Liên hệ</h4>
             <ul class="links-footer">
-              <li>
-                <img src="./img/icon-building.png" alt="" />
-                <span>Số 1, Ba Đình, Hà Nội</span>
-              </li>
               <li>
                 <img src="./img/icon-email.svg" alt="" />
                 <a href="mailto:info@luxsport.vn" title="Email Now">
@@ -390,8 +554,8 @@
               <li>
                 <a
                   target="_blank"
-                  href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F103904978382490%2F"
-                  ><img src="img/Tele.svg" alt=""
+                  href="#."
+                  ><img src="img/tiktok.svg" alt=""
                 /></a>
               </li>
               <li>
@@ -416,10 +580,16 @@
           <div class="policy-box">
             <p class="small-text">© Luxsport 2022. All rights reserved.</p>
             <a
+                target="_blank"
+                href="http://online.gov.vn/Home/WebDetails/94482"
+              >
+                <img src="./img/gov1.png" alt="" />
+              </a>
+              <a
               target="_blank"
               href="http://online.gov.vn/Home/WebDetails/94482"
             >
-              <img src="./img/gov.png" alt="" />
+              <img src="./img/gov2.png" alt="" />
             </a>
           </div>
         </div>

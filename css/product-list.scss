@@ -1,11 +1,137 @@
 .section-auto-video {
-    iframe {
-        width: 100%;
-        border-radius: 0;
-        height: 420px;
-    }
+  iframe {
+    width: 100%;
+    border-radius: 0;
+    height: 600px;
+   
+  }
+  
+}
+
+.html5-video-player .video-click-tracking, .html5-video-player .video-stream {
+  height: 100% !important;
+  width: 100% !important;
+  left: 0 !important; 
 }
 
 .category-name {
-    color: #000;
+  color: #000;
+}
+
+.box-filter {
+  margin-top: 24px;
+  border: 1px solid #e7e8e9;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.box-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box {
+  padding: 16px;
+}
+.box + .box {
+  border-top: 1px solid #f3f4f4;
+}
+.option-box {
+  display: flex;
+  align-items: center;
+  .p2 {
+    margin-right: 16px;
+    color: #878b94;
+  }
+}
+.dropdown-filter-left {
+  display: flex;
+  align-items: center;
+}
+
+.btn-filter {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+  padding: 0;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+  &:before {
+    content: "";
+    background: url(../img/icon-filter.svg) no-repeat;
+    background-size: 100% auto;
+    margin-right: 11px;
+    width: 18px;
+    height: 14px;
+    display: flex;
+  }
+}
+.list-option {
+  display: flex;
+  align-items: center;
+}
+.btn-option {
+  margin-right: 15px;
+  background: #f9fafa;
+  border: 1px solid #cfd1d4;
+  border-radius: 56px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  &:before {
+    content: "";
+    background: url(../img/icon-close-mo.svg) no-repeat;
+    background-size: 100% auto;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+  }
+  &:hover {
+    border: 1px solid #ed1c24;
+    background: #fef8f8;
+  }
+}
+
+.btn-delete-filter {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ed1c24;
+  display: flex;
+  align-items: center;
+  &:before {
+    content: "";
+    background: url(../img/icon-close-red.svg) no-repeat;
+    background-size: 100% auto;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+  }
+  &:hover, &:focus {
+    color: #ed1c24;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.grid .product-item {
+  img {
+    width: 100%;
+  }
+}
+
+.page-product-list {
+  .pagination  {
+    margin: 32px 0 48px;
+  }
 }

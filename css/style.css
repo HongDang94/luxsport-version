@@ -654,7 +654,6 @@ a:hover {
 
 .pagination {
   margin-top: 44px;
-  justify-content: flex-end;
 }
 
 .page-item {
@@ -715,6 +714,34 @@ a:hover {
 .accordion-button:not(.collapsed)::after {
   background-image: url(../img/semi-icons-chevron_right.svg);
   transform: rotate(-90deg);
+}
+
+select:invalid {
+  color: #878b94;
+  font-weight: 400;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: black;
+}
+
+.form-select {
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #e7e8e9;
+  border-radius: 8px;
+}
+.form-select.sm {
+  width: 190px;
+}
+.form-select.lg {
+  width: 222px;
 }
 
 @media (max-width: 1024px) {

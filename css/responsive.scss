@@ -94,6 +94,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    p + p{
+      margin-top: 4px;
+    }
   }
   .newsletter-wrap {
     img {
@@ -384,5 +387,12 @@
   }
   .video-slider .swiper-slide {
     height: 213px;
+  }
+  .address-info li, .links-footer li {
+    margin-top: 14px;
+  }
+  .about-us h4 {
+    margin-top: 30px;
+    margin-bottom: 14px;
   }
 }

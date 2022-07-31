@@ -446,7 +446,7 @@ footer h4 {
 
 .policy-box {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .policy-box a {
   margin-left: 20px;

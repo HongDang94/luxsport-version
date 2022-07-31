@@ -473,6 +473,11 @@
 }
 
 @media (max-width: 1024px) {
+  .page-product-detail {
+    .row {
+      --bs-gutter-x: 0;
+    }
+  }
   .price-detail, .btn-group-methodBuy {
     display: none;
   }
@@ -508,6 +513,7 @@
   .section-detail-product {
     .container {
       padding: 0;
+      --bs-gutter-x: 0;
       .mt24 {
         margin-top: 16px;
       }

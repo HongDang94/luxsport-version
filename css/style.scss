@@ -802,6 +802,24 @@ option {
   }
 }
 
+.section-method-contact {
+  margin-top: 40px;
+}
+
+.view-wrap {
+  .view .p h1,
+  h1,
+  h2,
+  h3 {
+    padding-top: 24px;
+    color: #101828;
+  }
+}
+
+.view-wrap .view p {
+  padding-top: 24px;
+}
+
 @media (max-width: 1440px) {
   .form-select {
     &.sm {

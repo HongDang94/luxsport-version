@@ -125,7 +125,7 @@
   .method-contact {
     padding: 16px 0;
   }
-  .section-method-contact {
+  .home-page .section-method-contact {
     margin-top: 98px;
   }
   .intro-product {
@@ -330,7 +330,7 @@
 .category-slider .swiper-pagination-fraction {
     bottom: 5px;
   }
-  .section-method-contact {
+  .home-page .section-method-contact {
     margin-top: 98px;
   }
   .category-slider .swiper-pagination {

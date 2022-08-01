@@ -41,6 +41,11 @@
     max-width: 768px;
   }
 }
+@media (max-width: 1440px) {
+  .video-slider .swiper-slide {
+    height: 199px;
+  }
+}
 @media (max-width: 1365px) {
   header .logo {
     margin-right: 1.568vw;
@@ -189,7 +194,8 @@
   .vka-wrapper {
     bottom: 20px;
   }
-  .vka, .vka-button {
+  .vka,
+.vka-button {
     right: 10px;
     bottom: 50px;
     width: 48px;
@@ -348,10 +354,12 @@
   .video-slider .swiper-slide {
     height: 213px;
   }
-  .address-info li, .links-footer li {
+  .address-info li,
+.links-footer li {
     margin-top: 14px;
   }
-  .about-us h4, .more-us h4 {
+  .about-us h4,
+.more-us h4 {
     margin-top: 30px;
     margin-bottom: 28px;
   }

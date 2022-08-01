@@ -4,7 +4,7 @@
   width: 100%;
 }
 .text-mo {
-  display: none ;
+  display: none;
 }
 @media (min-width: 1656px) and (max-width: 1920px) {
   .container,
@@ -42,6 +42,11 @@
     max-width: 768px;
   }
 }
+@media (max-width: 1440px) {
+  .video-slider .swiper-slide {
+    height: 199px;
+  }
+}
 @media (max-width: 1365px) {
   header .logo {
     margin-right: 1.568vw;
@@ -63,7 +68,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .swiper-pagination {
     display: block;
   }
@@ -94,7 +98,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    p + p{
+    p + p {
       margin-top: 4px;
     }
   }
@@ -210,7 +214,8 @@
   .vka-wrapper {
     bottom: 20px;
   }
-  .vka, .vka-button {
+  .vka,
+  .vka-button {
     right: 10px;
     bottom: 50px;
     width: 48px;
@@ -228,10 +233,10 @@
   .vka-wheel .vka-action-2 {
     bottom: 19px;
   }
-  .vka-wheel .vka-action-4{
+  .vka-wheel .vka-action-4 {
     bottom: 73px;
   }
-  .vka-wheel .vka-action-3{
+  .vka-wheel .vka-action-3 {
     bottom: 128px;
   }
   .icon-cps-vka-menu {
@@ -239,7 +244,7 @@
     height: 48px;
     background: url(../img/contact.png);
     background-size: 100%;
-}
+  }
   .category-slider {
     .swiper-pagination {
       display: none;
@@ -260,7 +265,7 @@
   .text-mo {
     display: block;
   }
-  .text-pc{
+  .text-pc {
     display: none;
   }
   .section-category .swiper-button-next,
@@ -389,10 +394,12 @@
   .video-slider .swiper-slide {
     height: 213px;
   }
-  .address-info li, .links-footer li {
+  .address-info li,
+  .links-footer li {
     margin-top: 14px;
   }
-  .about-us h4,  .more-us h4{
+  .about-us h4,
+  .more-us h4 {
     margin-top: 30px;
     margin-bottom: 28px;
   }

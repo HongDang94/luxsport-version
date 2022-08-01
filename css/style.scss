@@ -133,6 +133,16 @@ h5,
   }
 }
 
+.btn-gray {
+  background: #f3f4f4;
+  border-radius: 6px;
+  padding: 10px 12px;
+  min-width: 181px;
+  font-weight: 600;
+  &:hover{
+    background: #c9d1d1;
+  }
+}
 ul,
 p {
   margin: 0;
@@ -187,6 +197,9 @@ a {
 }
 .red {
   color: #ed1c24;
+}
+.green {
+  color: #5ac51c;
 }
 .input-group {
   width: auto;
@@ -837,7 +850,7 @@ option {
   padding-top: 24px;
 }
 
-.container-sm {
+.container-sm, .container-sm-2 {
   background: #fff;
   width: 926px;
   padding: 34px 119px;

@@ -171,6 +171,10 @@
         .btn {
             flex: 1;
         }
+        .btn-white, .btn-green {
+          padding: 10px 0;
+          font-size: 14px;
+        }
     }
   }
   .total-price-box {
@@ -195,4 +199,5 @@
         font-size: 20px;
     }
   }
+  
 }

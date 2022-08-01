@@ -106,11 +106,13 @@ h5,
   border: 1px solid #e7e8e9;
   border-radius: 8px;
   padding: 10px 12px;
-  color: #878B94;
-  &:hover, &:focus, .active {
-    background: #ED1C24;
-    border: 1px solid #ED1C24;
-    color : #fff;
+  color: #878b94;
+  &:hover,
+  &:focus,
+  .active {
+    background: #ed1c24;
+    border: 1px solid #ed1c24;
+    color: #fff;
   }
 }
 
@@ -744,6 +746,62 @@ option {
     width: 222px;
   }
 }
+.breadcrumb {
+  padding: 18px 0;
+  margin-bottom: 0;
+
+  li {
+    &:before {
+      content: "";
+      background: url(../img/icon-arrow.svg) no-repeat;
+      margin: 0 8px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      color: #101828;
+
+      &:hover {
+        color: #ed1c24;
+      }
+    }
+
+    &.active {
+      color: #878b94;
+    }
+  }
+}
+
+.breadcrumb.white {
+  li {
+    &:before {
+      background: url(../img/icon-arrow-white.svg) no-repeat;
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #ed1c24;
+      }
+    }
+
+    &.active {
+      color: #fff;
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   .form-select {
     &.sm {

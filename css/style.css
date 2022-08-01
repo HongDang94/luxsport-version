@@ -107,11 +107,12 @@ h5,
   border: 1px solid #e7e8e9;
   border-radius: 8px;
   padding: 10px 12px;
-  color: #878B94;
+  color: #878b94;
 }
-.btn-white:hover, .btn-white:focus, .btn-white .active {
-  background: #ED1C24;
-  border: 1px solid #ED1C24;
+.btn-white:hover, .btn-white:focus,
+.btn-white .active {
+  background: #ed1c24;
+  border: 1px solid #ed1c24;
   color: #fff;
 }
 
@@ -760,6 +761,46 @@ option {
 }
 .form-select.lg {
   width: 222px;
+}
+
+.breadcrumb {
+  padding: 18px 0;
+  margin-bottom: 0;
+}
+.breadcrumb li:before {
+  content: "";
+  background: url(../img/icon-arrow.svg) no-repeat;
+  margin: 0 8px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.breadcrumb li:first-child::before {
+  display: none;
+}
+.breadcrumb li a {
+  font-weight: 500;
+  color: #101828;
+}
+.breadcrumb li a:hover {
+  color: #ed1c24;
+}
+.breadcrumb li.active {
+  color: #878b94;
+}
+
+.breadcrumb.white li:before {
+  background: url(../img/icon-arrow-white.svg) no-repeat;
+}
+.breadcrumb.white li a {
+  color: #fff;
+}
+.breadcrumb.white li a:hover {
+  color: #ed1c24;
+}
+.breadcrumb.white li.active {
+  color: #fff;
 }
 
 @media (max-width: 1440px) {

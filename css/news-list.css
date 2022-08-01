@@ -24,6 +24,21 @@
   background: #ed1c24;
 }
 
+.section-linking {
+  color: #fff;
+  background: url(../img/bg-news-list.png) no-repeat;
+  background-size: 100% auto;
+}
+.section-linking a,
+.section-linking h2 {
+  color: #fff;
+}
+.section-linking h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 32px;
+}
+
 @media (max-width: 1656px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);

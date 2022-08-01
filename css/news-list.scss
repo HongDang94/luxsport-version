@@ -30,21 +30,20 @@
   background: #ed1c24;
 }
 
-// .mySwiper3  {
-//   .swiper-slide.of-tab {
-//     align-items: flex-start;
-//     text-align: left;
-//     font-size: 14px;
-//     background: #fff;
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//     img {
-//       height: auto;
-//     }
-//   }
-// }
-
+.section-linking {
+  color: #fff;
+  background: url(../img/bg-news-list.png) no-repeat;
+  background-size: 100% auto;
+  a,
+  h2 {
+    color: #fff;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 32px;
+  }
+}
 @media (max-width: 1656px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
@@ -66,9 +65,8 @@
 }
 
 @media (max-width: 576px) {
-    .grid {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 16px;
-    }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
   }
-  
+}

@@ -200,11 +200,15 @@ footer {
   .swiper-slide {
     width: calc(33.33% - 17px);
     border-radius: 8px;
+    img {
+      border-radius: 8px;
+    }
   }
 }
 
 .product-slider {
-  .swiper-slide, .product-item {
+  .swiper-slide,
+  .product-item {
     position: relative;
     flex-direction: column;
     padding: 12px 12px 8px 12px;
@@ -242,7 +246,7 @@ footer {
     overflow: hidden;
     height: 44px;
     &:hover {
-      color: #ed1c24
+      color: #ed1c24;
     }
   }
   .price-sale {

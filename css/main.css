@@ -182,8 +182,12 @@ footer h4 {
   width: calc(33.33% - 17px);
   border-radius: 8px;
 }
+.advertisSlider .swiper-slide img {
+  border-radius: 8px;
+}
 
-.product-slider .swiper-slide, .product-slider .product-item {
+.product-slider .swiper-slide,
+.product-slider .product-item {
   position: relative;
   flex-direction: column;
   padding: 12px 12px 8px 12px;

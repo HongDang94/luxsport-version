@@ -69,15 +69,6 @@
   margin-bottom: 0;
   display: block;
 }
-.price-detail .price-origin {
-  margin-top: 3px;
-  font-size: 12px;
-  color: #b7babf;
-}
-.price-detail .discount-percent {
-  margin-left: 4px;
-  color: #5ac51c;
-}
 
 .detail-product-slider .swiper-button-next,
 .detail-product-slider .swiper-button-prev {

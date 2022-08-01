@@ -219,10 +219,6 @@
   --bs-backdrop-opacity: 0.7;
 }
 
-.show-mo {
-  display: none;
-}
-
 .option-box-mo .btn-option {
   display: inline-block;
   margin: 12px 8px 0 0;
@@ -273,12 +269,6 @@
   }
 }
 @media (max-width: 991px) {
-  .show-pc {
-    display: none;
-  }
-  .show-mo {
-    display: block;
-  }
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

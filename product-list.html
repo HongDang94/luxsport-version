@@ -27,7 +27,7 @@
           ><img src="./img/logo.png" alt="Lux Sport"
         /></a>
         <ul class="list-page">
-          <li class="active">
+          <li>
             <a href="product-detail.html" target="_blank" class="h5"
               >Ghế massage</a
             >
@@ -80,7 +80,7 @@
               <p class="quantity-result p2">3 results</p>
               <ul class="result-list-product">
                 <li>
-                  <a href="#." target="_blank">
+                  <a href="#" target="_blank">
                     <div class="box-img">
                       <img src="./img/product/product-1.jpg" alt="" />
                     </div>
@@ -94,7 +94,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#." target="_blank">
+                  <a href="#" target="_blank">
                     <div class="box-img">
                       <img src="./img/product/product-1.jpg" alt="" />
                     </div>
@@ -108,7 +108,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#." target="_blank">
+                  <a href="#" target="_blank">
                     <div class="box-img">
                       <img src="./img/product/product-1.jpg" alt="" />
                     </div>
@@ -156,14 +156,17 @@
     </header>
 
     <div class="gnb-mo">
-      <button type="button" class="btn-back-home">
-        <img class="icon-back" src="./img/icon-prev.png" alt="" />
+      <button type="button" class="btn_menu">
+        <img src="./img/icon-hamberger-mo.svg" alt="" />
       </button>
 
       <a href="https://luxsport.com.vn/" target="_blank" class="logo"
         ><img src="./img/logo.png" alt="Lux Sport"
       /></a>
       <div class="btn-group-action">
+        <button type="button">
+          <img src="./img/icon-search-mo.svg" alt="" />
+        </button>
         <button type="button">
           <img src="./img/icon-cart-mo.svg" alt="" />
         </button>
@@ -722,7 +725,9 @@
               class="btn btn-reset small-text2"
               data-bs-dismiss="modal"
               aria-label="Close"
-            >Reset</button>
+            >
+              Reset
+            </button>
           </div>
           <div class="modal-body">
             <div class="option-box-mo-wrap">
@@ -730,9 +735,7 @@
               <div class="option-box-mo">
                 <button type="button" class="btn btn-option">Tất cả</button>
                 <button type="button" class="btn btn-option">Bình dân</button>
-                <button type="button" class="btn btn-option active">
-                  VIP
-                </button>
+                <button type="button" class="btn btn-option active">VIP</button>
                 <button type="button" class="btn btn-option">Trung cấp</button>
                 <button type="button" class="btn btn-option">Cao cấp</button>
               </div>
@@ -742,7 +745,9 @@
               <div class="option-box-mo">
                 <button type="button" class="btn btn-option">Tất cả</button>
                 <button type="button" class="btn btn-option">Dưới 10tr</button>
-                <button type="button" class="btn btn-option active">Từ 10-20tr</button>
+                <button type="button" class="btn btn-option active">
+                  Từ 10-20tr
+                </button>
                 <button type="button" class="btn btn-option">Từ 20-40tr</button>
                 <button type="button" class="btn btn-option">Trên 40tr</button>
               </div>
@@ -754,9 +759,15 @@
               class="btn btn-cancel"
               data-bs-dismiss="modal"
             >
-            Hủy
+              Hủy
             </button>
-            <button type="button"  data-bs-dismiss="modal" class="btn btn-danger">Áp dụng</button>
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-danger"
+            >
+              Áp dụng
+            </button>
           </div>
         </div>
       </div>
@@ -764,5 +775,6 @@
 
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>
     <script src="./js/vendors/vendor.js"></script>
+    <script src="./js/common.js"></script>
   </body>
 </html>

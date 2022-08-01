@@ -524,11 +524,11 @@ a.view-all {
   width: 56px;
   height: 56px;
   margin-right: 8px;
-  border-radius: 8px;
-  border: 1px solid #f3f4f4;
 }
 .result-list-product li .box-img img {
   width: 100%;
+  border: 1px solid #f3f4f4;
+  border-radius: 8px;
 }
 .result-list-product li .box-content {
   display: flex;

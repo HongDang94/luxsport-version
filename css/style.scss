@@ -871,6 +871,16 @@ option {
 .show-mo {
   display: none;
 }
+.qa {
+ 
+  h1 {
+    padding-bottom: 27px;
+  }
+  .container-sm {
+    padding-bottom: 58px;
+  }
+}
+
 @media (max-width: 1440px) {
   .form-select {
     &.sm {
@@ -882,6 +892,20 @@ option {
   }
 }
 @media (max-width: 1024px) {
+  .qa {
+    .container-sm {
+      padding-bottom: 24px;
+    }
+    .section-linking {
+      .container {
+        padding: 0 16px !important;
+      }
+    }
+    h1 {
+      padding-top: 24px;
+      padding-bottom: 18px;
+    }
+  }
   .container-sm {
     background: #fff;
     width: 100%;
@@ -914,6 +938,9 @@ option {
   }
   .accordion-item:not(:first-of-type) {
     border-top: 0;
+  }
+  .accordion-button.collapsed {
+    padding: 8px 0;
   }
 }
 

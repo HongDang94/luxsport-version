@@ -22,8 +22,19 @@ jQuery(document).ready(function ($) {
           });
       });
     };
+
+    // var openSearch = function() {
+    //   $("#btn-search-mo").on("click", function () {
+    //     $(".dropdown-menu-search").show();
+    //     $("body").addClass("show_menu");
+    //     $(".dropdown-menu-search")
+    //       .stop()
+    //       .animate({ left: "0" }, 600, "easeInOutExpo", function () {});
+    //   });
+    // }
   
     openMenu();
     closeMenu();
+    // openSearch();
   });
   

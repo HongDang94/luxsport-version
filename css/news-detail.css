@@ -25,6 +25,18 @@
   color: #b7babf;
 }
 
+.calendar {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #878b94;
+  line-height: 23px;
+}
+.calendar img {
+  margin-right: 8px;
+}
+
 @media (max-width: 1024px) {
   .section-linking .container {
     padding: 0 16px !important;

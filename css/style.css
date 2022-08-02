@@ -668,6 +668,7 @@ a:hover {
 .dropdown-menu-search h4,
 .dropdown-menu-search .h4 {
   color: #101828;
+  margin-bottom: 12px;
 }
 .dropdown-menu-search .form-control {
   height: 44px;
@@ -928,6 +929,14 @@ option {
 .form-label {
   margin-top: 24px;
   color: #878B94;
+}
+
+.form-control-lg {
+  font-size: 14px;
+}
+
+input.form-control-lg {
+  height: 44px;
 }
 
 @media (max-width: 1440px) {

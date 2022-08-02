@@ -9,10 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -150,7 +146,7 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="btn btn-icon btn-cart"></button>
+          <button type="button" class="btn btn-icon btn-cart"><span class="badge-number">6</span></button>
         </div>
       </div>
     </header>
@@ -164,8 +160,9 @@
         <button type="button">
           <img src="./img/icon-search-mo.svg" alt="" />
         </button>
-       <button type="button" class="btn-cart">
+        <button type="button" class="btn-cart">
           <img src="./img/icon-cart-mo.svg" alt="" />
+          <span class="badge-number">6</span>
         </button>
       </div>
     </div>
@@ -218,17 +215,116 @@
       </div>
     </div>
 
-    <section class="cart-wrap cart-register">
-      <div class="container container-sm-2">
-        <div class="box-img">
-          <img src="./img/icon-whislist.png" alt="" />
+    <section class="cart-wrap">
+      <div class="container">
+        <h1>Giỏ hàng (2)</h1>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-12 list-cart-box">
+            <div class="list-cart">
+              <div class="cart-item">
+                <div class="cart-left">
+                  <div class="box-img">
+                    <img src="./img/product/product-1.jpg" alt="" />
+                  </div>
+                  <div class="box-content">
+                    <p class="p1">
+                      Ghế Massage Lux Sport Boss Ghế Massage Lux Sport Boss Ghế
+                      Massage Lux Sport Boss Ghế Massage Lux Sport Boss
+                    </p>
+                    <div class="price-detail">
+                      <strong class="h3">160.990.000 đ</strong>
+                      <del><span class="price-origin">20.500.000</span></del>
+                      <span class="small-text2 discount-percent">-12%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-right">
+                  <div class="counter">
+                    <button type="button" class="btn btn-minus">
+                      <img src="./img/icon-minus.svg" alt="" />
+                    </button>
+                    <input type="text" value="1" class="quantity" />
+                    <button type="button" class="btn btn-plus">
+                      <img src="./img/icon-plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="btn btn-delete">
+                    <img src="./img/icon-delete.svg" alt="" />Xóa
+                  </button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="cart-left">
+                  <div class="box-img">
+                    <img src="./img/product/product-1.jpg" alt="" />
+                  </div>
+                  <div class="box-content">
+                    <p class="p1">
+                      Ghế Massage Lux Sport Boss Ghế Massage Lux Sport Boss Ghế
+                      Massage Lux Sport Boss Ghế Massage Lux Sport Boss
+                    </p>
+                    <div class="price-detail">
+                      <strong class="h3">160.990.000 đ</strong>
+                      <del><span class="price-origin">20.500.000</span></del>
+                      <span class="small-text2 discount-percent">-12%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-right">
+                  <div class="counter">
+                    <button type="button" class="btn btn-minus">
+                      <img src="./img/icon-minus.svg" alt="" />
+                    </button>
+                    <input type="text" value="1" class="quantity" />
+                    <button type="button" class="btn btn-plus">
+                      <img src="./img/icon-plus.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="btn btn-delete">
+                    <img src="./img/icon-delete.svg" alt="" />Xóa
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group-cart">
+              <button type="button" class="btn btn-white">
+                Quay lại mua sắm
+              </button>
+              <button type="button" class="btn btn-green">
+                Cập nhật giỏ hàng
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 total-price-box">
+            <div>
+              <h3 >Tạm tính đơn hàng</h3>
+
+              <div class="item-price show-pc">
+                <p class="p1">Tạm tính:</p>
+                <strong class="price">160.990.000 đ</strong>
+              </div>
+              <div class="item-price show-pc">
+                <p class="p1">Giảm giá:</p>
+                <strong class="price">0</strong>
+              </div>
+              <div class="item-price">
+                <p class="p1">Tổng cộng:</p>
+                <strong class="price red">160.990.000 đ</strong>
+              </div>
+            </div>
+            <div class="btn-group-cart">
+              <button type="button" class="btn btn-danger">Mua ngay</button>
+              <button type="button" class="btn btn-primary">Trả góp 0%</button>
+            </div>
+          </div>
         </div>
-        <h1 class="green">Cảm ơn quý khách đã đăng kí !</h1>
-        <button type="button" class="btn btn-gray">Về trang chủ</button>
       </div>
     </section>
 
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="./js/vendors/vendor.js"></script>
     <script src="./js/common.js"></script>
   </body>
 </html>

@@ -9,17 +9,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <title>Câu hỏi thường gặp</title>
+    <link rel="stylesheet" href="./css/product-list.css" />
+    <title>Ghế massage nhập khẩu Luxsport</title>
   </head>
 
-  <body class="qa">
+  <body class="page-product-list">
     <header>
       <div>
         <a href="https://luxsport.com.vn/" target="_blank" class="logo"
@@ -217,146 +214,244 @@
       </div>
     </div>
 
-    <section class="section-linking">
-      <div class="container p-0">
-        <ol class="breadcrumb" style="display: flex !important">
-          <li><a href="#.">Trang chủ</a></li>
-          <li class="active">Câu hỏi thường gặp</li>
-        </ol>
-      </div>
+    <section class="section-auto-video">
+      <video
+        style="width: 100%"
+        class="video-bg fill visible"
+        preload=""
+        playsinline=""
+        autoplay=""
+        muted=""
+        loop=""
+      >
+        <source
+          src="https://luxsport.vn/wp-content/uploads/2022/06/Banner_test.mp4"
+          type="video/mp4"
+        />
+      </video>
     </section>
 
-    <section class="qa">
-      <div class="container container-sm">
-        <h1>Câu hỏi thường gặp</h1>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button h4"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
+    <section class="product-list-wrap">
+      <div class="container">
+        <div class="category-title mt24">
+          <h1 class="category-name">Ghế massage</h1>
+          <button
+            type="button"
+            class="btn btn-filter mo show-mo has-count"
+            data-bs-toggle="modal"
+            data-bs-target="#modalFilterItem"
+          >
+            <span class="count-option">2</span>
+            Bộ lọc
+          </button>
+        </div>
+        <div class="box-filter show-pc">
+          <div class="box box-dropdown">
+            <div class="dropdown-filter-left">
+              <button type="button" class="btn btn-filter">Bộ lọc</button>
+              <select
+                required
+                class="form-select lg"
+                aria-label="Chọn khoảng giá"
               >
-                Ghế massage của Lux Sport có chính sách bảo hành, bảo trì như
-                thế nào?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <p class="p2 m-0">
-                  Ghế massage phù hợp nhất với những người có bệnh đau nhức về
-                  xương khớp, vai gáy và những bệnh như tuần hoàn máu, căng
-                  thẳng, lo âu…Ghế massage sẽ giúp bạn xua tan mệt mỏi, căng
-                  thẳng, stress và giảm bớt các cơn đau nhức về xương khớp nhiều
-                  phần. Bảo vệ sức khỏe hằng ngày cho chính bạn và gia đình,
-                  người thân khi chỉ cần bỏ ra 15-30 mỗi ngày mà thôi.
-                </p>
-              </div>
+                <option value="0">Tất cả</option>
+                <option value="1" selected>Trên 40tr</option>
+                <option value="2" selected>Từ 20 - 40 triệu</option>
+                <option value="3">Từ 10-20 triệu</option>
+                <option value="4">Dưới 10 triệu</option>
+              </select>
+              <select required class="form-select sm" aria-label="Chọn loại">
+                <option value="0">Tất cả</option>
+                <option value="1">VIP</option>
+                <option value="2" selected>Cao cấp</option>
+                <option value="4">Trung cấp</option>
+                <option value="4">Bình dân</option>
+              </select>
+              <select required class="form-select sm" aria-label="Khác">
+                <option value="" selected>Khác</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div>
+              <select required class="form-select lg" aria-label="Sắp xếp theo">
+                <option value="" selected>Sắp xếp theo</option>
+                <option value="1">Giá từ cao đến thấp</option>
+                <option value="2">Giá từ thấp đến cao</option>
+                <option value="3">Mới trước</option>
+                <option value="4">Cũ trước</option>
+              </select>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button h4 collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Ghế massage dành cho những ai là tốt nhất?
+          <div class="box option-box">
+            <span class="p2">Xem theo:</span>
+            <div class="list-option">
+              <button type="button" class="btn btn-option">
+                Từ 20 - 40 triệu
               </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <p class="p2 m-0">
-                  Ghế massage phù hợp nhất với những người có bệnh đau nhức về
-                  xương khớp, vai gáy và những bệnh như tuần hoàn máu, căng
-                  thẳng, lo âu…Ghế massage sẽ giúp bạn xua tan mệt mỏi, căng
-                  thẳng, stress và giảm bớt các cơn đau nhức về xương khớp nhiều
-                  phần. Bảo vệ sức khỏe hằng ngày cho chính bạn và gia đình,
-                  người thân khi chỉ cần bỏ ra 15-30 mỗi ngày mà thôi.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button h4 collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Ghế massage dành cho những ai là tốt nhất?
+              <button type="button" class="btn btn-option">Cao cấp</button>
+              <button type="button" class="btn btn-delete-filter">
+                Xóa lọc
               </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <p class="p2 m-0">
-                  Ghế massage phù hợp nhất với những người có bệnh đau nhức về
-                  xương khớp, vai gáy và những bệnh như tuần hoàn máu, căng
-                  thẳng, lo âu…Ghế massage sẽ giúp bạn xua tan mệt mỏi, căng
-                  thẳng, stress và giảm bớt các cơn đau nhức về xương khớp nhiều
-                  phần. Bảo vệ sức khỏe hằng ngày cho chính bạn và gia đình,
-                  người thân khi chỉ cần bỏ ra 15-30 mỗi ngày mà thôi.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button
-                class="accordion-button h4 collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour"
-              >
-                Ghế massage dành cho những ai là tốt nhất?
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <p class="p2 m-0">
-                  Ghế massage phù hợp nhất với những người có bệnh đau nhức về
-                  xương khớp, vai gáy và những bệnh như tuần hoàn máu, căng
-                  thẳng, lo âu…Ghế massage sẽ giúp bạn xua tan mệt mỏi, căng
-                  thẳng, stress và giảm bớt các cơn đau nhức về xương khớp nhiều
-                  phần. Bảo vệ sức khỏe hằng ngày cho chính bạn và gia đình,
-                  người thân khi chỉ cần bỏ ra 15-30 mỗi ngày mà thôi.
-                </p>
-              </div>
             </div>
           </div>
         </div>
+
+        <div class="category-product product-slider grid mt24">
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+          <div class="product-item">
+            <label class="sale">30% off</label>
+            <a href="#." target="_blank">
+              <img
+                src="./img/product/product-1.jpg"
+                alt="Ghế massage Luxsport Boss chair luxury 2"
+              />
+            </a>
+            <a
+              href="#."
+              target="_blank"
+              target="_blank"
+              class="product-title p1"
+              >Ghế massage Luxsport Boss chair luxury 2</a
+            >
+            <h3 class="price-sale">32.990.000 đ</h3>
+            <del><span class="price">32.990.000 đ</span></del>
+          </div>
+        </div>
       </div>
+      <ul class="pagination pagination-md justify-content-center">
+        <li class="page-item active" aria-current="page">
+          <span class="page-link">1</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#.">2</a></li>
+        <li class="page-item"><a class="page-link" href="#.">3</a></li>
+      </ul>
     </section>
 
     <section class="section-method-contact mt32">
@@ -603,6 +698,79 @@
           <a href="#." target="_blank"></a>
         </li>
       </ul>
+    </div>
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade bottom"
+      id="modalFilterItem"
+      tabindex="-1"
+      aria-labelledby="modalFilterItemLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn btn-back-modal"
+              data-bs-dismiss="modal"
+              aria-label="Black"
+            ></button>
+            <h4 class="modal-title" id="modalFilterItemLabel">Bộ lọc</h4>
+            <button
+              type="button"
+              class="btn btn-reset small-text2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Reset
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="option-box-mo-wrap">
+              <h5 class="p2">Phân khúc</h5>
+              <div class="option-box-mo">
+                <button type="button" class="btn btn-option">Tất cả</button>
+                <button type="button" class="btn btn-option">Bình dân</button>
+                <button type="button" class="btn btn-option active">VIP</button>
+                <button type="button" class="btn btn-option">Trung cấp</button>
+                <button type="button" class="btn btn-option">Cao cấp</button>
+              </div>
+            </div>
+            <div class="option-box-mo-wrap">
+              <h5 class="p2">Mức giá</h5>
+              <div class="option-box-mo">
+                <button type="button" class="btn btn-option">Tất cả</button>
+                <button type="button" class="btn btn-option">Dưới 10tr</button>
+                <button type="button" class="btn btn-option active">
+                  Từ 10-20tr
+                </button>
+                <button type="button" class="btn btn-option">Từ 20-40tr</button>
+                <button type="button" class="btn btn-option">Trên 40tr</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-cancel"
+              data-bs-dismiss="modal"
+            >
+              Hủy
+            </button>
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-danger"
+            >
+              Áp dụng
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>

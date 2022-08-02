@@ -882,14 +882,36 @@ option {
   display: none !important;
 }
 .qa {
-  h1 {
+  section.h1 {
     padding-bottom: 27px;
   }
   .container-sm {
     padding-bottom: 58px;
   }
 }
-
+.calendar {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #878b94;
+  line-height: 23px;
+}
+.calendar img {
+  margin-right: 8px;
+}
+.content {
+  margin-top: 33px;
+  a {
+    color: #101828;
+    &:hover {
+      color: #ed1c24;
+    }
+  }
+}
+.mt20 {
+  margin-top: 20px;
+}
 @media (max-width: 1440px) {
   .form-select {
     &.sm {

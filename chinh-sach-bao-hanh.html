@@ -9,18 +9,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./css/product-list.css" />
-    <title>Ghế massage nhập khẩu Luxsport</title>
+    <link rel="stylesheet" href="./css/insurance.css" />
+    <title>Bảo hành</title>
   </head>
 
-  <body class="page-product-list">
+  <body>
     <header>
       <div>
         <a href="https://luxsport.com.vn/" target="_blank" class="logo"
@@ -164,7 +160,7 @@
         <button type="button">
           <img src="./img/icon-search-mo.svg" alt="" />
         </button>
-       <button type="button" class="btn-cart">
+        <button type="button" class="btn-cart">
           <img src="./img/icon-cart-mo.svg" alt="" />
         </button>
       </div>
@@ -218,244 +214,107 @@
       </div>
     </div>
 
-    <section class="section-auto-video">
-      <video
-        style="width: 100%"
-        class="video-bg fill visible"
-        preload=""
-        playsinline=""
-        autoplay=""
-        muted=""
-        loop=""
-      >
-        <source
-          src="https://luxsport.vn/wp-content/uploads/2022/06/Banner_test.mp4"
-          type="video/mp4"
-        />
-      </video>
+    <section class="section-linking">
+      <div class="container p-0">
+        <ol class="breadcrumb">
+          <li><a href="#.">Trang chủ</a></li>
+          <li class="active">Bảo hành</li>
+        </ol>
+      </div>
     </section>
 
-    <section class="product-list-wrap">
+    <section class="section-insurance">
       <div class="container">
-        <div class="category-title mt24">
-          <h1 class="category-name">Ghế massage</h1>
-          <button
-            type="button"
-            class="btn btn-filter mo show-mo has-count"
-            data-bs-toggle="modal"
-            data-bs-target="#modalFilterItem"
-          >
-            <span class="count-option">2</span>
-            Bộ lọc
-          </button>
-        </div>
-        <div class="box-filter show-pc">
-          <div class="box box-dropdown">
-            <div class="dropdown-filter-left">
-              <button type="button" class="btn btn-filter">Bộ lọc</button>
-              <select
-                required
-                class="form-select lg"
-                aria-label="Chọn khoảng giá"
+        <div class="box-insurance-inner">
+          <div class="box-img">
+            <img src="./img/insurance.jpg" alt="" />
+          </div>
+          <div class="box-content">
+            <h2>Tra cứu bảo hành điện tử</h2>
+            <p class="p1">
+              Vui lòng điền đầy đủ dãy số series của thiết bị bảo hành vào ô
+              tương ứng
+            </p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
               >
-                <option value="0">Tất cả</option>
-                <option value="1" selected>Trên 40tr</option>
-                <option value="2" selected>Từ 20 - 40 triệu</option>
-                <option value="3">Từ 10-20 triệu</option>
-                <option value="4">Dưới 10 triệu</option>
-              </select>
-              <select required class="form-select sm" aria-label="Chọn loại">
-                <option value="0">Tất cả</option>
-                <option value="1">VIP</option>
-                <option value="2" selected>Cao cấp</option>
-                <option value="4">Trung cấp</option>
-                <option value="4">Bình dân</option>
-              </select>
-              <select required class="form-select sm" aria-label="Khác">
-                <option value="" selected>Khác</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
             </div>
-            <div>
-              <select required class="form-select lg" aria-label="Sắp xếp theo">
-                <option value="" selected>Sắp xếp theo</option>
-                <option value="1">Giá từ cao đến thấp</option>
-                <option value="2">Giá từ thấp đến cao</option>
-                <option value="3">Mới trước</option>
-                <option value="4">Cũ trước</option>
-              </select>
-            </div>
-          </div>
-          <div class="box option-box">
-            <span class="p2">Xem theo:</span>
-            <div class="list-option">
-              <button type="button" class="btn btn-option">
-                Từ 20 - 40 triệu
-              </button>
-              <button type="button" class="btn btn-option">Cao cấp</button>
-              <button type="button" class="btn btn-delete-filter">
-                Xóa lọc
-              </button>
-            </div>
+            <button type="button" class="btn btn-danger">Tra cứu</button>
           </div>
         </div>
+        <div class="box-insurance-inner">
+          <h2>Chính sách bảo hành</h2>
+          <div class="content">
+            <p>Chính sách bảo hành</p>
+            <p>
+              Thời gian bảo hành: Tất cả mặt hàng do chúng tôi cung cấp được bảo
+              hành miễn phí từ 06 tháng kể từ ngày giao hàng và lắp đặt hoàn
+              thiện.
+            </p>
+            <p>Điều kiện bảo hành</p>
+            <p>
+              Chúng tôi sẽ tiến hành bảo hành đối với mọi trục trặc kỹ thuật đối
+              với các lỗi thuộc về khâu sản xuất và lắp đặt gây ra. Hàng hóa bảo
+              hành phải còn nguyên tem bảo hành, tem sản phẩm và giấy biên nhận
+              chứng minh là quý khách đã mua hàng từ com. Đối với những hỏng hóc
+              như: Làm vỡ, làm hỏng, gây biến dạng, để lửa gây hư hại và các
+              trường hợp tương tự khác không thuộc phạm vị bảo hành. Chúng tôi
+              vẫn có trách nhiệm sửa chữa nhưng bên mua phải thanh toán theo chi
+              phí thực tế của vật tư linh kiện thay thế. Sửa chữa hoặc thay thế
+              mới với giá ưu đãi khi hết thời hạn bảo hành.
+            </p>
+            <p>Hướng dẫn yêu cầu bảo hành</p>
+            <p>
+              Quý khách có thể gọi điện tới bộ phận chăm sóc khách hàng của công
+              ty để yêu cầu bảo hành:
+            </p>
 
-        <div class="category-product product-slider grid mt24">
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
-          </div>
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
-          </div>
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
-          </div>
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
-          </div>
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
-          </div>
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
-          </div>
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
-          </div>
-          <div class="product-item">
-            <label class="sale">30% off</label>
-            <a href="#." target="_blank">
-              <img
-                src="./img/product/product-1.jpg"
-                alt="Ghế massage Luxsport Boss chair luxury 2"
-              />
-            </a>
-            <a
-              href="#."
-              target="_blank"
-              target="_blank"
-              class="product-title p1"
-              >Ghế massage Luxsport Boss chair luxury 2</a
-            >
-            <h3 class="price-sale">32.990.000 đ</h3>
-            <del><span class="price">32.990.000 đ</span></del>
+            <p class="mt20">
+              Mọi chi tiết xin quý khách vui lòng liên hệ với chúng tôi:
+            </p>
+
+            <p class="mt20">Hotline: <a href="tel:1900 0065">1900 0065</a></p>
+            <p class="mt20">Chính sách đổi trả</p>
+            <p>– Phạm vi áp dụng</p>
+            <p class="mt20">
+              Áp dụng đổi trả hàng trong vòng 12 giờ đối với các sản phẩm bị hư
+              hỏng do lỗi vận chuyển hoặc lỗi do nhà sản xuất
+            </p>
+            <p class="mt20">Điều kiện đổi trả</p>
+            <p>
+              – Thời gian đổi trả: trong vòng 7 ngày kể từ ngày yêu cầu đổi trả
+              hàng
+            </p>
+            <p class="mt20">
+              – Yêu cầu giữ nguyên bao bì, tem mác của sản phẩm khi đổi trả
+            </p>
+            <p class="mt20">– Số lần đổi trả cho 1 sản phẩm là 1 lần</p>
+            <p class="mt20">
+              – Yêu cầu giữ nguyên bao bì, tem mác của sản phẩm khi đổi trả
+            </p>
+            <p class="mt20">
+              – Các sản phẩm không được đổi trả: đã hết thời gian đổi trả và các
+              sản phẩm không do lỗi của nhà vận chuyển và không do lỗi của nhà
+              sản xuất
+            </p>
+            <p>
+              Chúng tôi cũng rất sẵn lòng lắng nghe các góp ý và yêu cầu của quý
+              khách hàng.
+            </p>
+            <p>
+              Quý khách có thể liên hệ số: 1900 0065 (giờ hành chính) để đóng
+              góp ý kiến của quý khách về sản phẩm và dịch vụ của chúng tôi
+            </p>
           </div>
         </div>
       </div>
-      <ul class="pagination pagination-md justify-content-center">
-        <li class="page-item active" aria-current="page">
-          <span class="page-link">1</span>
-        </li>
-        <li class="page-item"><a class="page-link" href="#.">2</a></li>
-        <li class="page-item"><a class="page-link" href="#.">3</a></li>
-      </ul>
     </section>
 
     <section class="section-method-contact mt32">
@@ -704,81 +563,6 @@
       </ul>
     </div>
 
-    <!-- Button trigger modal -->
-
-    <!-- Modal -->
-    <div
-      class="modal fade bottom"
-      id="modalFilterItem"
-      tabindex="-1"
-      aria-labelledby="modalFilterItemLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn btn-back-modal"
-              data-bs-dismiss="modal"
-              aria-label="Black"
-            ></button>
-            <h4 class="modal-title" id="modalFilterItemLabel">Bộ lọc</h4>
-            <button
-              type="button"
-              class="btn btn-reset small-text2"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              Reset
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="option-box-mo-wrap">
-              <h5 class="p2">Phân khúc</h5>
-              <div class="option-box-mo">
-                <button type="button" class="btn btn-option">Tất cả</button>
-                <button type="button" class="btn btn-option">Bình dân</button>
-                <button type="button" class="btn btn-option active">VIP</button>
-                <button type="button" class="btn btn-option">Trung cấp</button>
-                <button type="button" class="btn btn-option">Cao cấp</button>
-              </div>
-            </div>
-            <div class="option-box-mo-wrap">
-              <h5 class="p2">Mức giá</h5>
-              <div class="option-box-mo">
-                <button type="button" class="btn btn-option">Tất cả</button>
-                <button type="button" class="btn btn-option">Dưới 10tr</button>
-                <button type="button" class="btn btn-option active">
-                  Từ 10-20tr
-                </button>
-                <button type="button" class="btn btn-option">Từ 20-40tr</button>
-                <button type="button" class="btn btn-option">Trên 40tr</button>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-cancel"
-              data-bs-dismiss="modal"
-            >
-              Hủy
-            </button>
-            <button
-              type="button"
-              data-bs-dismiss="modal"
-              class="btn btn-danger"
-            >
-              Áp dụng
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script src="./js/vendors/bootstrap.bundle.min.js"></script>
-    <script src="./js/vendors/vendor.js"></script>
-    <script src="./js/common.js"></script>
   </body>
 </html>

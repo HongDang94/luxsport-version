@@ -351,6 +351,15 @@ a:hover {
   top: 0;
   z-index: 100;
 }
+.gnb-mo a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  color: #ed1c24;
+}
 .gnb-mo button {
   display: flex;
   align-items: center;
@@ -850,7 +859,8 @@ option {
   padding-top: 24px;
 }
 
-.container-sm, .container-sm-2 {
+.container-sm,
+.container-sm-2 {
   background: #fff;
   width: 926px;
   padding: 34px 119px;
@@ -870,7 +880,7 @@ option {
 }
 
 .show-mo {
-  display: none;
+  display: none !important;
 }
 
 .qa h1 {
@@ -941,6 +951,6 @@ option {
     display: none;
   }
   .show-mo {
-    display: block;
+    display: flex !important;
   }
 }/*# sourceMappingURL=style.css.map */

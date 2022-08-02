@@ -139,7 +139,7 @@ h5,
   padding: 10px 12px;
   min-width: 181px;
   font-weight: 600;
-  &:hover{
+  &:hover {
     background: #c9d1d1;
   }
 }
@@ -349,7 +349,15 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-
+  a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    display: flex;
+    color: #ed1c24;
+  }
   button {
     display: flex;
     align-items: center;
@@ -850,7 +858,8 @@ option {
   padding-top: 24px;
 }
 
-.container-sm, .container-sm-2 {
+.container-sm,
+.container-sm-2 {
   background: #fff;
   width: 926px;
   padding: 34px 119px;
@@ -869,10 +878,9 @@ option {
   color: #5ac51c;
 }
 .show-mo {
-  display: none;
+  display: none !important;
 }
 .qa {
- 
   h1 {
     padding-bottom: 27px;
   }
@@ -949,6 +957,6 @@ option {
     display: none;
   }
   .show-mo {
-    display: block;
+    display: flex !important;
   }
 }

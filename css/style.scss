@@ -375,6 +375,11 @@ a {
       margin-left: 10px;
     }
   }
+  .btn-cart {
+    &:hover {
+      background: none;
+    }
+  }
 }
 .btn_menu {
   width: 32px;
@@ -996,5 +1001,11 @@ option {
   .swiper-button-next,
   .swiper-button-prev {
     display: none !important;
+  }
+  .form-label {
+    margin-top: 16px;
+  }
+  .mb-4 {
+    margin-bottom: 16px !important;
   }
 }

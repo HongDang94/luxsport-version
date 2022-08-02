@@ -15,7 +15,6 @@
   margin-top: 16px;
 }
 .box-insurance-inner h2 {
-  color: #101828;
   margin-bottom: 16px;
 }
 .box-insurance-inner .content {
@@ -24,6 +23,10 @@
 
 .box-insurance-inner:first-child {
   padding: 14px 24px;
+}
+
+.box-insurance-inner:last-child h2 {
+  color: #101828;
 }
 
 .box-img {
@@ -35,4 +38,29 @@
 
 .btn-danger {
   min-width: 165px;
+}
+
+@media (max-width: 767px) {
+  .box-insurance-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 16px;
+  }
+  .box-insurance-inner:first-child {
+    padding: 16px;
+  }
+  .box-img {
+    width: 204px;
+  }
+  .section-insurance .container {
+    padding: 0;
+  }
+  .btn-danger {
+    width: 100%;
+  }
+  .box-content {
+    width: 100%;
+  }
 }/*# sourceMappingURL=insurance.css.map */

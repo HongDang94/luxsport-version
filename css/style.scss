@@ -319,8 +319,9 @@ a {
 .prev-category-sport:after,
 .next-category-chair:after,
 .prev-category-chair:after {
-  width: 32px;
-  height: 32px;
+  width: 32px !important;
+  height: 32px !important;
+  display: block;
 }
 
 .prev-btn,
@@ -958,5 +959,11 @@ option {
   }
   .show-mo {
     display: flex !important;
+  }
+}
+@media (max-width: 767px) {
+
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important;
   }
 }

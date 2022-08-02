@@ -77,11 +77,30 @@ header .btn-call {
 header .btn-call:hover, header .btn-call:focus {
   background: #fef8f8 url(../img/icon-call-hover.svg) center no-repeat;
 }
-header .btn-cart {
+
+.btn-cart {
+  position: relative;
   background: #f3f4f4 url(../img/icon-cart.svg) center no-repeat;
 }
-header .btn-cart:hover, header .btn-cart:focus {
+.btn-cart:hover, .btn-cart:focus {
   background: #fef8f8 url(../img/icon-cart.svg) center no-repeat;
+}
+
+.badge-number {
+  position: absolute;
+  top: -3px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: #fff;
+  background: #ed1c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 .intro-product {

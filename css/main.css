@@ -177,7 +177,7 @@ footer h4 {
 .list-building li:before {
   content: "";
   display: flex;
-  background: url(/img/icon-building.png) no-repeat;
+  background: url(../img/icon-building.png) no-repeat;
   width: 20px;
   height: 20px;
 }

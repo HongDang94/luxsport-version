@@ -194,11 +194,11 @@ footer {
     &:before {
       content: "";
       display: flex;
-      background: url(/img/icon-building.png) no-repeat;
+      background: url(../img/icon-building.png) no-repeat;
       width: 20px;
       height: 20px;
     }
-    
+
     span {
       margin-left: 10px;
     }

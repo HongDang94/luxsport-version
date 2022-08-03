@@ -51,6 +51,11 @@ header {
           }
         }
       }
+      &:hover {
+        .dropdown-menu.dropdown-category-multi{
+          display: flex;
+        }
+      }
     }
   }
   h1 {
@@ -87,6 +92,36 @@ header {
     &:hover,
     &:focus {
       background: #fef8f8 url(../img/icon-call-hover.svg) center no-repeat;
+    }
+  }
+}
+
+.dropdown-menu.dropdown-category-multi{
+  padding: 24px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  top: 58px !important;
+  border-radius: 0;
+  align-items: flex-start;
+  .container {
+    align-items: flex-start;
+    .col-lg-3 {
+      h4 {
+        margin-bottom: 12px;
+      }
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 24px;
+    }
+    a {
+      line-height: 50px !important;
+      &:hover {
+        &:before {
+          display: none;
+        }
+      }
     }
   }
 }

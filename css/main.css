@@ -46,6 +46,9 @@ header .list-page li.active a {
 header .list-page li.active a:before {
   display: block;
 }
+header .list-page li:hover .dropdown-menu.dropdown-category-multi {
+  display: flex;
+}
 header h1 {
   font-weight: 700;
   font-size: 18px;
@@ -76,6 +79,34 @@ header .btn-call {
 }
 header .btn-call:hover, header .btn-call:focus {
   background: #fef8f8 url(../img/icon-call-hover.svg) center no-repeat;
+}
+
+.dropdown-menu.dropdown-category-multi {
+  padding: 24px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  top: 58px !important;
+  border-radius: 0;
+  align-items: flex-start;
+}
+.dropdown-menu.dropdown-category-multi .container {
+  align-items: flex-start;
+}
+.dropdown-menu.dropdown-category-multi .container .col-lg-3 {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 24px;
+}
+.dropdown-menu.dropdown-category-multi .container .col-lg-3 h4 {
+  margin-bottom: 12px;
+}
+.dropdown-menu.dropdown-category-multi .container a {
+  line-height: 50px !important;
+}
+.dropdown-menu.dropdown-category-multi .container a:hover:before {
+  display: none;
 }
 
 .btn-cart {

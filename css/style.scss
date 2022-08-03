@@ -201,6 +201,15 @@ a {
 .green {
   color: #5ac51c;
 }
+.color-main {
+  color: #101828;
+}
+.color-neutral {
+  color: #585D69;
+} 
+.color-neutral-dark {
+  color: #878B94;
+}
 .input-group {
   width: auto;
 }
@@ -925,13 +934,33 @@ option {
 }
 .form-label {
   margin-top: 24px;
-  color: #878B94;
+  color: #878b94;
 }
-.form-control-lg{
+.form-control-lg {
   font-size: 14px;
 }
-input.form-control-lg{  
+input.form-control-lg {
   height: 44px;
+}
+
+.form-check {
+  padding: 7px 11px 7px 22px;
+  margin: 0 -8px;
+  .form-check-input {
+    height: 18px;
+    width: 18px;
+    margin-right: 11px;
+    margin-left: -12px;
+  }
+  .form-check-label {
+    line-height: 26px;
+    color: #878B94;
+
+  }
+  &:hover {
+    background: #f5f9ff;
+    border-radius: 8px;
+  }
 }
 @media (max-width: 1440px) {
   .form-select {
@@ -998,7 +1027,7 @@ input.form-control-lg{
 
 @media (max-width: 991px) {
   .show-pc {
-    display: none;
+    display: none !important ;
   }
   .show-mo {
     display: flex !important;

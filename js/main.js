@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
   var swiperBanner = new Swiper(".bannerSlider", {
     spaceBetween: 30,
     effect: "fade",
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -12,6 +13,7 @@ jQuery(document).ready(function ($) {
   var swiperAdvertisSlider = new Swiper(".advertisSlider", {
     slidesPerView: "auto",
     spaceBetween: 24,
+    loop: true,
     breakpoints: {
       320: {
         spaceBetween: 12,
@@ -25,6 +27,7 @@ jQuery(document).ready(function ($) {
   var swiperBlogSlider = new Swiper(".blog-slider", {
     slidesPerView: "auto",
     spaceBetween: 18,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next.btn-blog",
       prevEl: ".swiper-button-prev.btn-blog",
@@ -38,6 +41,7 @@ jQuery(document).ready(function ($) {
   var swiperProductSlider = new Swiper("#sproduct-best-seller", {
     slidesPerView: 5,
     spaceBetween: 16,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next.next-btn",
       prevEl: ".swiper-button-prev.prev-btn",
@@ -73,6 +77,7 @@ jQuery(document).ready(function ($) {
   var swiperProductSlider = new Swiper("#sproduct-new", {
     slidesPerView: 5,
     spaceBetween: 16,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next.next-btn-news",
       prevEl: ".swiper-button-prev.prev-btn-news",
@@ -108,6 +113,7 @@ jQuery(document).ready(function ($) {
   var swiperCategorySliderChair = new Swiper("#category-chair", {
     slidesPerView: 4,
     spaceBetween: 16,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -143,6 +149,7 @@ jQuery(document).ready(function ($) {
   var swiperCategorySlider = new Swiper("#category-sport", {
     slidesPerView: 4,
     spaceBetween: 16,
+     loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -178,6 +185,7 @@ jQuery(document).ready(function ($) {
   var swiperVideo = new Swiper(".video-slider", {
     slidesPerView: 3,
     spaceBetween: 24,
+    loop: true,
     pagination: {
       el: ".swiper-pagination.pagination-video",
       clickable: true,
@@ -205,6 +213,7 @@ jQuery(document).ready(function ($) {
   var swiperBlogNews = new Swiper(".blog-news-slider", {
     slidesPerView: 3,
     spaceBetween: 24,
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

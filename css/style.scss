@@ -533,6 +533,38 @@ a {
   box-shadow: 0 0 0 0 #c31d1d;
 }
 
+.modal-advice {
+  .modal-body {
+    position: relative;
+    padding: 0;
+    display: flex;
+    .box-image {
+      width: 261px;
+      img {
+        width: 100%;
+      }
+    }
+    .box-content {
+      padding: 24px 30px;
+      box-sizing: border-box;
+      width: calc(100% - 261px);
+    }
+    .btn-close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+  .modal-dialog {
+    width: 704px !important;
+    max-width: 704px !important;
+  }
+}
+
+.modal.show .modal-dialog.modal-advice {
+  max-width: 704px;
+}
+
 @keyframes zoom {
   0% {
     transform: scale(1);

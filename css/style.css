@@ -532,6 +532,36 @@ a:hover {
   box-shadow: 0 0 0 0 #c31d1d;
 }
 
+.modal-advice .modal-body {
+  position: relative;
+  padding: 0;
+  display: flex;
+}
+.modal-advice .modal-body .box-image {
+  width: 261px;
+}
+.modal-advice .modal-body .box-image img {
+  width: 100%;
+}
+.modal-advice .modal-body .box-content {
+  padding: 24px 30px;
+  box-sizing: border-box;
+  width: calc(100% - 261px);
+}
+.modal-advice .modal-body .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.modal-advice .modal-dialog {
+  width: 704px !important;
+  max-width: 704px !important;
+}
+
+.modal.show .modal-dialog.modal-advice {
+  max-width: 704px;
+}
+
 @-webkit-keyframes zoom {
   0% {
     transform: scale(1);

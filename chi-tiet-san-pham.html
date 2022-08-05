@@ -9,6 +9,9 @@
   <link rel="icon" type="image/png" href="./img/favicon.png" />
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/xzoom.min.css" />
+  <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
@@ -205,54 +208,31 @@
     <div class="container">
       <div class="row g-6">
         <div class="col-lg-8 col-md-12 detail-left">
-          <div class="p-3 swiper-container">
-            <div class="swiper detail-product-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./img/product/product-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-2.jpg" />
-                </div>
-              </div>
-              <div id="next" class="swiper-button-next"></div>
-              <div id="prev" class="swiper-button-prev"></div>
-              <!-- <div id="numberSlides">0/0 Offers</div> -->
-              <div class="swiper-pagination"></div>
+          <div class="slide-show-wrap" id="producrview">
+            <div class="slideshow-items-wrap">
+              <img class="xzoom" id="xzoom-fancy"
+                src="https://luxsport.com.vn/upload/product/1657166927ghe-massage-boss-chair-lux-3.jpg"
+                xoriginal="https://luxsport.com.vn/upload/product/1657166927ghe-massage-boss-chair-lux-3.jpg" />
+
             </div>
-            <div class="swiper slider-thumb">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./img/product/product-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/product/product-2.jpg" />
-                </div>
-              </div>
+            <div class="xzoom-thumbs">
+              <a href="./img/product/product-1.jpg">
+                <img id="fist-thumb" class="xzoom-gallery"
+                  src="./img/product/product-1.jpg"
+                  xpreview="./img/product/product-1.jpg">
+              </a>
+              <a href="./img/product/product-2.jpg">
+                <img class="xzoom-gallery" src="./img/product/product-2.jpg">
+              </a>
+              <a href="./img/product/product-3.jpg">
+                <img class="xzoom-gallery" src="./img/product/product-3.jpg">
+              </a>
+              <a href="./img/product/product-4.jpg">
+                <img class="xzoom-gallery" src="./img/product/product-4.jpg">
+              </a>
+              <a href="./img/product/product-1.jpg">
+                <img class="xzoom-gallery" src="./img/product/product-1.jpg">
+              </a>
             </div>
           </div>
 
@@ -497,7 +477,8 @@
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <p class="p2 m-0">Ghế massage phù hợp nhất với những người có bệnh đau nhức về xương khớp, vai
+                          <p class="p2 m-0">Ghế massage phù hợp nhất với những người có bệnh đau nhức về xương khớp,
+                            vai
                             gáy và những bệnh như tuần hoàn máu, căng thẳng, lo âu…Ghế massage sẽ giúp bạn xua tan mệt
                             mỏi, căng thẳng, stress và giảm bớt các cơn đau nhức về xương khớp nhiều phần. Bảo vệ sức
                             khỏe hằng ngày cho chính bạn và gia đình, người thân khi chỉ cần bỏ ra 15-30 mỗi ngày mà
@@ -947,11 +928,7 @@
         <div class="modal-body">
           <form class="dropdown-menu-search">
             <div class="form-control-wrap">
-              <input
-                class="form-control"
-                id="search-dropdown"
-                placeholder="Typing..."
-              />
+              <input class="form-control" id="search-dropdown" placeholder="Typing..." />
               <button type="button" class="icon-search"></button>
             </div>
             <p class="quantity-result p2">3 results</p>
@@ -1044,6 +1021,9 @@
   <script src="./js/vendors/bootstrap.bundle.min.js"></script>
   <script src="./js/vendors/vendor.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.fancybox.js"></script>
+  <script src="./js/jquery.hammer.min.js"></script>
+  <script src="./js/xzoom.min.js"></script>
   <script src="./js/video.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/product-detail.js"></script>
